@@ -8,13 +8,16 @@ body {
 
   /* Header section */
   header {
-    height: 15vh;
+    height: 15%;
     background-color: #f1f1f1;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: left;
     align-items: center;
+  }
+  header>a {
+    text-decoration: none;
   }
   /* Logo styling */
   #logo {
@@ -28,14 +31,9 @@ body {
   nav {
     height: 10vh;
     background-color: #ccc;
-    top: 15%;
     width: 100%;
-    justify-content: center;
   }
   /* navigation text styling */
-  a {
-    text-decoration: none;
-  }
   a>h1{
     display:inline;
     color: black;
@@ -44,17 +42,29 @@ body {
     text-shadow: 0 0 1px black;
     padding: 10px;
     width:100%;
-    position:relative;
-    top:-20px;
     text-align: center;
   }
+  nav>a {
+    position:relative;
+    top:2rem;
+    left: 1rem;
+    text-decoration: none;
+    color:lightgray;
+    text-shadow: 0 0 1px black;
+    font-size: 1.5rem;
+    background-color: #333;
+    border-radius: 1rem;
+    padding: 0.75rem;
+  }
 
-        /* Login link text Styling */
+        /* Login Login text Styling */
   nav>a#login {
     float:right;
-    margin-right: 1em;
+    position: relative;
+    top: 1rem;
+    left: -1em;
   }
-         /* end of link text styling */
+         /* end of Login text styling */
 
   /* end of navigation text styling */
 
@@ -62,16 +72,14 @@ body {
 
   /* Main Content Styling */
   main {
-    height: 75vh;
+    height: 80vh;
     width: 70%;
     overflow-y: auto;
     background: #666;
-    position: relative;
     float:left;
   }
   aside {
-    height: 75vh;
-
+    height: 80vh;
     width: 30%;
     background: #333;
     float:right;
@@ -80,7 +88,7 @@ body {
 
   /* Styling Footer */
   footer {
-    height: 15vh;
+    height: 10vh;
     background-color: #f1f1f1;
     position: absolute;
     bottom: 0;
