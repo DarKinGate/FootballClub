@@ -45,13 +45,16 @@ body {
     text-transform: uppercase;
     text-shadow: 0 0 1px black;
     padding: 10px;
+    width:100%;
+    text-align: center;
+  }
   nav>a {
     text-decoration: none;
     color:lightgray;
     text-shadow: 0 0 1px black;
     font-size: 1.5rem;
     background-color: #333;
-    height: 100%;
+    padding: 2rem;
   }
 
         /* Login Login text Styling */
