@@ -19,13 +19,22 @@
       <h1>Football Club</h1>
     </a>
   </header>
+  <input type="checkbox" id="login" style="display:none">
   <nav>
     <!-- Navigation content goes here -->
     <a href="#">Home</a>
     <a href="#">Gallery</a>
     <a href="#">Links</a>
-    <a href="#" id="login">Login</a>
+    <label for="login">Login</label>
   </nav>
+  <section id="login-field">
+    <label for="login">X</label>
+    <form action="login.php" method="post">
+      <input type="text" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <button type="submit">Login</button>
+    </form>
+  </section>
   <content>
   <main>
     <!-- Main content goes here -->
@@ -38,7 +47,7 @@
 </content>
   <footer>
     <!-- Footer content goes here -->
-    Footer with copyright and links
+    (c) 2023 Football club
   </footer>
 </body>
 </html>
