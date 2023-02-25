@@ -12,36 +12,41 @@ body {
     background-color: #f1f1f1;
     top: 0;
     width: 100%;
-    z-index: 1;
     display: flex;
     justify-content: left;
     align-items: center;
   }
-  h1 {
-    margin: 0;
-    padding: 10px;
-  }
   /* Logo styling */
   #logo {
+    display:inline-block;
     height: 80%;
     margin-left: 10px;
     width: 75px;
   }
+
   /* end of logo styling */
   nav {
     height: 10vh;
     background-color: #ccc;
     top: 15%;
     width: 100%;
-    z-index: 1;
     justify-content: center;
   }
   /* navigation text styling */
-  h1>a{
+  a {
+    text-decoration: none;
+  }
+  a>h1{
+    display:inline;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
     text-shadow: 0 0 1px black;
+    padding: 10px;
+    width:100%;
+    position:relative;
+    top:-20px;
+    text-align: center;
   }
 
         /* Login link text Styling */
@@ -77,9 +82,8 @@ body {
   footer {
     height: 15vh;
     background-color: #f1f1f1;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    z-index: 1;
   }
   /* Ennf of footer styling */

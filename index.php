@@ -13,11 +13,10 @@
 <body>
   <header>
     <!-- Header content goes here -->
-    <a href="index.php">
+    <a href="#">
       <img src="logo.svg" id="logo" alt="Football Club Logo">
-    <h1>
-      Football Club</a>
-    </h1>
+      <h1>Football Club</h1>
+    </a>
   </header>
   <nav>
     <!-- Navigation content goes here -->
