@@ -45,9 +45,6 @@ body {
     text-transform: uppercase;
     text-shadow: 0 0 1px black;
     padding: 10px;
-    width:100%;
-    text-align: center;
-  }
   nav>a {
     text-decoration: none;
     color:lightgray;
