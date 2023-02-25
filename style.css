@@ -2,40 +2,47 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
   /* End of the body reset */
 
   /* Header section */
   header {
-    height: 15%;
+    height: 7rem;
     background-color: #f1f1f1;
-    top: 0;
-    width: 100%;
     display: flex;
     justify-content: left;
     align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
   }
   header>a {
     text-decoration: none;
+    width:100%;
+    margin-top:1rem;
   }
   /* Logo styling */
   #logo {
+    position:relative;
     display:inline-block;
     height: 80%;
     margin-left: 10px;
     width: 75px;
+    
   }
 
   /* end of logo styling */
   nav {
-    height: 10vh;
     background-color: #ccc;
     width: 100%;
     display: grid;
     grid-auto-flow: column;
     align-items: center;
     text-align: center;
+    flex-direction: column;
+    flex-shrink: 0;
   }
   /* navigation text styling */
   a>h1{
@@ -67,28 +74,32 @@ body {
 
   /* End of Header Styling */
 
+  content {
+    display:flex;
+    flex-direction: row;
+    flex-grow: 0;
+    height: 75%;
+    padding-bottom: 4rem;
+  }
   /* Main Content Styling */
   main {
-    height: 80vh;
-    width: 70%;
     overflow-y: auto;
     background: #666;
-    float:left;
+    width:70%;
   }
   aside {
-    height: 80vh;
-    width: 30%;
+    overflow-y: auto;
     background: #333;
-    float:right;
+    width:30%;
   }
   /* End of Main Content Styling */
 
   /* Styling Footer */
   footer {
-    height: 10%;
+    position: fixed;
     background-color: #999;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    height:4rem;
+    bottom: 0;
   }
   /* Ennf of footer styling */
