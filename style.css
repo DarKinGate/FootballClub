@@ -32,6 +32,10 @@ body {
     height: 10vh;
     background-color: #ccc;
     width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    text-align: center;
   }
   /* navigation text styling */
   a>h1{
@@ -45,24 +49,17 @@ body {
     text-align: center;
   }
   nav>a {
-    position:relative;
-    top:2rem;
-    left: 1rem;
     text-decoration: none;
     color:lightgray;
     text-shadow: 0 0 1px black;
     font-size: 1.5rem;
     background-color: #333;
-    border-radius: 1rem;
-    padding: 0.75rem;
+    height: 100%;
   }
 
         /* Login Login text Styling */
   nav>a#login {
-    float:right;
-    position: relative;
-    top: 1rem;
-    left: -1em;
+
   }
          /* end of Login text styling */
 
@@ -88,8 +85,8 @@ body {
 
   /* Styling Footer */
   footer {
-    height: 10vh;
-    background-color: #f1f1f1;
+    height: 10%;
+    background-color: #999;
     position: absolute;
     bottom: 0;
     width: 100%;
