@@ -1,3 +1,6 @@
+    <?php
+    if ($url != '/user.php') {
+      ?>
     <!-- A Side Content goes here -->
     <match>
       <section><opponent>One VS Another</opponent><br>
@@ -17,3 +20,4 @@
         Date:<br>
        Time:</section>
     </match>
+    <?php } ?>

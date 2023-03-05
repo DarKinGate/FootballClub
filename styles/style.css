@@ -236,15 +236,18 @@ margin-right: 50%;
 background: var(--darker-gray);
 border: 2px solid var(--too-dark-gray);
 font-size: clamp(16px, 2vw, 20px);
+height: 90%;
 }
 fieldset#user_display>label{
+  display:table;
   margin-top: 1rem;
   background: var(--light-gray);
   border: 2px solid var(--too-dark-gray);
-  border-radius: 0.5rem;
-  padding: 0.5rem;
+  border-bottom:none;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 0 0.5rem;
   margin-top: 1rem;
-  width: 50px;
+  z-index: 1;
 }
 fieldset#user_display>legend{
   background: var(--light-gray);
@@ -256,11 +259,15 @@ fieldset#user_display>legend{
 fieldset#user_display>input, fieldset#user_display>textarea{
   background: var(--light-gray);
   border: 2px solid var(--too-dark-gray);
-  border-radius: 0.5rem;
+  border-radius: 0rem 0.5rem 0.5rem 0.5rem;
   padding: 0.5rem;
   font-size: clamp(16px, 2vw, 20px);
   color: var(--black);
   text-shadow: 0px 0px 4px var(--white);
+}
+fieldset#user_display>textarea{
+  resize: none;
+  height: 100%;
 }
 /* User Form End! */
 
