@@ -223,7 +223,7 @@ content {
 main {
   overflow-y: auto;
   background: var(--darker-gray);
-  width: 70%;
+  width: 80%;
 }
 
 /* End of Main Content Styling */
@@ -232,7 +232,7 @@ main {
 aside {
   overflow-y: auto;
   background: var(--very-dark-gray);
-  width: 30%;
+  width: 20%;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
@@ -244,7 +244,7 @@ aside>match {
   background-color: var(--too-dark-gray);
   color: var(--white);
   text-shadow: 0px 0px 6px var(--black);
-  font-size: clamp(16px, 2.5vw, 40px);
+  font-size: clamp(16px, 2vw, 20px);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   overflow: hidden;
@@ -253,7 +253,7 @@ aside>match {
 
 aside>match>section {
   position: relative;
-  top: 10%;
+  top: 0;
   background-color: rgba(51, 51, 51, 0.8);
   border-radius: 50px;
   line-height: 2rem;
