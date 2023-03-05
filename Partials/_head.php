@@ -7,4 +7,4 @@
 
   <title>FOOTBALL CLUB - Home</title>
   <!-- Other meta tags, stylesheets, and scripts can be added here -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">

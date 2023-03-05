@@ -34,7 +34,7 @@ if (mysqli_num_rows($result) == 1) {
     header("Location: /index.php");
 } else {
 $error = "Wrong username and/or password!";
-require("rstyle.html");
+require("styles/rstyle.html");
 include("index.php");
 ?>
     <section id="error"><?php echo $error; ?></section>
