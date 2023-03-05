@@ -42,7 +42,7 @@
   <section id="login-field">
     <label for="login">X</label>
     <form action="login.php" method="post">
-      <input type="text" name="email" id="email" placeholder="Email">
+      <input type="email" name="email" id="email" placeholder="Email">
       <input type="password" name="password" id="password" placeholder="Password">
       <button type="submit">Login</button>
     </form>
