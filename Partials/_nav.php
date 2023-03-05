@@ -8,7 +8,10 @@
     <span></span>
     <?php 
     session_start();
-    if($_SESSION['user']) {
+    if($_SESSION == null) {
+      $_SESSION["user"] = "undefined";
+    }
+    if($_SESSION["user"] != "undefined") {
 ?><a id="user-area">User Area</a>
 <form action="login.php" method="post">
 <button type="submit" name="logout" id="logout">Logout</button>

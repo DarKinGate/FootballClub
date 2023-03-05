@@ -1,7 +1,7 @@
 
 <?php
-require_once('dbconnect.php');
 session_start();
+require_once('db_connect.php');
 
 // Sanitize user inputs
 $username = mysqli_real_escape_string($conn, $_POST['email']);
