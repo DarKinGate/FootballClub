@@ -5,6 +5,12 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  --light-gray: #999;
+  --very-light-gray: #ccc;
+  --very-dark-gray: #333;
+  --dark-gray: #444;
+  --darker-gray: #666;
+  --too-dark-gray: #222;
 }
 
 /* End of the body reset */
@@ -12,7 +18,7 @@ body {
 /* Header section */
 header {
   height: 7rem;
-  background-color: #999;
+  background-color: var(--light-gray);
   display: flex;
   justify-content: left;
   align-items: center;
@@ -38,7 +44,7 @@ header>a {
 
 /* end of logo styling */
 nav {
-  background-color: #ccc;
+  background-color: var(--very-light-gray);
   width: 100%;
   display: grid;
   grid-auto-flow: column;
@@ -63,16 +69,16 @@ a>h1 {
 
 nav>a {
   text-decoration: none;
-  color: lightgray;
+  color: var(--light-gray);
   text-shadow: 0 0 1px black;
   font-size: 1.5rem;
-  background-color: #333;
+  background-color: var(--very-dark-gray);
   padding: 2rem;
-  box-shadow: 0px 0px 1px 2px #444 inset;
+  box-shadow: 0px 0px 1px 2px var(--dark-gray) inset;
   transition: 0.4s;
 }
 nav>a:hover {
-  box-shadow: 0px 0px 1px 2px #999 inset;
+  box-shadow: 0px 0px 1px 2px var(--light-gray) inset;
   color:white;
 }
 
@@ -86,11 +92,11 @@ label[for="login"] {
   font-size: 1.5rem;
   background-color: #333;
   padding: 2rem;
-  box-shadow: 0px 0px 1px 2px #444 inset;
+  box-shadow: 0px 0px 1px 2px var(--dark-gray) inset;
   transition: 0.4s;
 }
 label[for="login"]:hover {
-  box-shadow: 0px 0px 1px 2px #999 inset;
+  box-shadow: 0px 0px 1px 2px var(--light-gray) inset;
   color:white;
 }
 /* end of Login text styling */
@@ -108,7 +114,7 @@ section#login-field {
   min-width: 24rem;
   transform: translate(-50%, -100%);
   background-color: rgba(51, 51, 51, 0.726);
-  border: 2px solid lightgray;
+  border: 2px solid var(--light-gray);
   border-radius: 1rem;
 }
 
@@ -136,7 +142,7 @@ section>label[for="login"] {
   border-radius: 100%;
   padding: 1rem;
   font-size: 1rem;
-  border: 2px solid #999;
+  border: 2px solid var(--light-gray);
   position: relative;
   top: -2rem;
   left: 3rem;
@@ -155,16 +161,16 @@ section>label[for="login"] {
   float:right;
   text-decoration: none;
   cursor: pointer;
-  color: lightgray;
+  color: var(--light-gray);
   text-shadow: 0 0 1px black;
   font-size: 1.5rem;
-  background-color: #333;
+  background-color: var(--very-dark-gray);
   padding: 2rem;
-  box-shadow: 0px 0px 1px 2px #444 inset;
+  box-shadow: 0px 0px 1px 2px var(--dark-gray) inset;
   transition: 0.4s;
 }
 #logout:hover {
-  box-shadow: 0px 0px 1px 2px #999 inset;
+  box-shadow: 0px 0px 1px 2px var(--light-gray) inset;
   color:white;
 }
 /* End of Log Out Button */
@@ -187,7 +193,7 @@ content {
 /* Main Content Styling */
 main {
   overflow-y: auto;
-  background: #666;
+  background: var(--darker-gray);
   width: 70%;
 }
 /* End of Main Content Styling */
@@ -195,7 +201,7 @@ main {
 /* Side Content Styling */
 aside {
   overflow-y: auto;
-  background: #333;
+  background: var(--very-dark-gray);
   width: 30%;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -204,7 +210,7 @@ aside {
 aside>match{
   width:100%;
   height: 100%;
-  background-color: #222;
+  background-color: var(--too-dark-gray);
   color: white;
   text-shadow: 0px 0px 6px black;
   font-size: clamp(16px, 2.5vw, 40px);
@@ -234,7 +240,7 @@ aside>match>section>opponent{
 /* Styling Footer */
 footer {
   position: fixed;
-  background-color: #999;
+  background-color: var(--light-gray);
   width: 100%;
   height: 4rem;
   bottom: 0;
