@@ -1,13 +1,13 @@
 <style>
-/* Animate Error Pop-up */
-#error{
+  /* Animate Error Pop-up */
+  #error {
     padding: 1rem;
     text-align: center;
     background-color: rgba(51, 51, 51, 0.9);
     border: 2px solid red;
     text-shadow: 0px 0px 2px var(--black);
     border-radius: 1rem;
-    position:absolute;
+    position: absolute;
     top: -10%;
     z-index: -1;
     opacity: 0;
@@ -17,27 +17,32 @@
     animation: error ease-in-out forwards;
     animation-duration: 5s;
   }
+
   @keyframes error {
-    0%{
+    0% {
       top: -10%;
       z-index: -1;
       opacity: 0;
     }
-    10%{
+
+    10% {
       top: 1%;
       z-index: 1;
       opacity: 1;
     }
-    90%{
+
+    90% {
       top: 1%;
       z-index: 1;
       opacity: 1;
     }
-    100%{
+
+    100% {
       top: -10%;
       z-index: -1;
       opacity: 0;
     }
   }
+
   /* End of Animate Error Pop-up */
-  </style>
+</style>
