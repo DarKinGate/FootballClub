@@ -26,6 +26,7 @@
     <a href="#">Home</a>
     <a href="#">Gallery</a>
     <a href="#">Links</a>
+    <a id="user-area">User Area</a>
     <?php 
     session_start();
     if($_SESSION['user']) {
