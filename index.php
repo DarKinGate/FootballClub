@@ -55,19 +55,19 @@
   </main>
   <aside>
     <!-- A Side Content goes here -->
-    <match style="--url: url(upcoming.bmp)">
+    <match>
       <section><opponent>One VS Another</opponent><br>
         Location:<br>
         Date:<br>
        Time:</section>
     </match>
-    <match style="--url: url(upcoming.bmp)">
+    <match>
     <section><opponent>One VS Another</opponent><br>
       Location:<br>
         Date:<br>
        Time:</section>
     </match>
-    <match style="--url: url(upcoming.bmp)">
+    <match>
       <section><opponent>One VS Another</opponent><br>
         Location:<br>
         Date:<br>
