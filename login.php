@@ -1,6 +1,6 @@
 
 <?php
-require_once('football_db.php');
+require_once('dbconnect.php');
 session_start();
 
 // Sanitize user inputs
