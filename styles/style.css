@@ -226,6 +226,30 @@ main {
   width: 80%;
 }
 
+
+
+/* User Form Start! */
+fieldset#user_display{
+display: flex;
+flex-direction: column;
+margin-right: 50%;
+background: var(--darker-gray);
+border: 2px solid var(--too-dark-gray);
+font-size: clamp(16px, 2vw, 20px);
+}
+fieldset#user_display>label{
+  margin-top: 1rem;
+}
+fieldset#user_display>legend{
+  background: var(--light-gray);
+  border: 2px solid var(--too-dark-gray);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* User Form End! */
+
 /* End of Main Content Styling */
 
 /* Side Content Styling */
