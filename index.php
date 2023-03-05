@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
 <?php include("Partials/_head.php"); ?>
+</head>
 <body>
   <header>
-    <!-- Header content goes here -->
-    <a href="#">
-      <img src="logo.svg" id="logo" alt="Football Club Logo">
-      <h1>Football Club</h1>
-    </a>
+  <?php include("Partials/_header.php"); ?>
   </header>
   <?php include("Partials/_nav.php"); ?>
 <?php include("Partials/_content.php"); ?>
