@@ -2,9 +2,9 @@
   <input type="checkbox" id="login-failed" style="display:none" checked>
   <nav>
     <!-- Navigation content goes here -->
-    <a href="#">Home</a>
-    <a href="#">Gallery</a>
-    <a href="#">Links</a>
+    <a href="./">Home</a>
+    <a href="./gallery.php">Gallery</a>
+    <a href="./links.php">Links</a>
     <span></span>
     <?php 
     session_start();
@@ -12,7 +12,8 @@
       $_SESSION["user"] = "undefined";
     }
     if($_SESSION["user"] != "undefined") {
-?><a id="user-area">User Area</a>
+      $user = $_SESSION["user"];
+?><a href="./user.php" id="user-area">User Area</a>
 <form action="login.php" method="post">
 <button type="submit" name="logout" id="logout">Logout</button>
 </form>
