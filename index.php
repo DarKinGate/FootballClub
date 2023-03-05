@@ -26,17 +26,19 @@
     <a href="#">Home</a>
     <a href="#">Gallery</a>
     <a href="#">Links</a>
+    <span></span>
     <?php 
     session_start();
     if($_SESSION['user']) {
-?><a id="user-area">User Area</a><form action="login.php" method="post">
+?><a id="user-area">User Area</a>
+<form action="login.php" method="post">
 <button type="submit" name="logout" id="logout">Logout</button>
 </form>
 </nav>
 <?php
     } else {
       ?>
-          <span></span>
+          
 
     <label for="login">Login</label>
   </nav>
