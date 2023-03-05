@@ -204,7 +204,7 @@ content {
   display: flex;
   flex-direction: row;
   flex-grow: 0;
-  height: 75%;
+  height: 100%;
   padding-bottom: 4rem;
 }
 /* end of Container styling witch includes <main> and <aside> */

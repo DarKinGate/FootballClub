@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include("head.php"); ?>
+<?php include("Partials/_head.php"); ?>
 <body>
   <header>
     <!-- Header content goes here -->
@@ -9,8 +9,8 @@
       <h1>Football Club</h1>
     </a>
   </header>
-  <?php include("nav.php"); ?>
-<?php include("content.php"); ?>
-  <?php include("footer.php"); ?>
+  <?php include("Partials/_nav.php"); ?>
+<?php include("Partials/_content.php"); ?>
+  <?php include("Partials/_footer.php"); ?>
 </body>
 </html>
