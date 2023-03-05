@@ -1,8 +1,12 @@
 <?php 
+ if($_SESSION == null) {
+    header("Location: /index.php");
+  }
 require_once('db_connect.php');
 $sql = "SELECT Email, Name, Last_Name, Position, Notes FROM fb_players where Email='$user'";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
+
 ?>
 <fieldset id="user_display">
     <legend>Player Data</legend>
