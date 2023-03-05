@@ -247,7 +247,16 @@ fieldset#user_display>legend{
   padding: 0.5rem;
   margin-top: 1rem;
 }
-
+fieldset#user_display>input, fieldset#user_display>textarea{
+  background: var(--light-gray);
+  border: 2px solid var(--too-dark-gray);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  font-size: clamp(16px, 2vw, 20px);
+  color: var(--black);
+  text-shadow: 0px 0px 4px var(--white);
+}
 /* User Form End! */
 
 /* End of Main Content Styling */
