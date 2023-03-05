@@ -8,7 +8,9 @@
     <span></span>
     <?php 
     $url = $_SERVER['REQUEST_URI'];
-    session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+      session_start();
+  }
     if($_SESSION == null) {
       $_SESSION["user"] = "undefined";
     }
