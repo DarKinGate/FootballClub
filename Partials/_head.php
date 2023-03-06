@@ -15,9 +15,8 @@
     if($_SESSION["user"] != "undefined") {
       $user = $_SESSION["user"];
       ?><title>FOOTBALL CLUB - <?php echo ($user) ?></title><?php
-    }
-    
+    } else {
  ?>
-  <title>FOOTBALL CLUB - Home</title>
+  <title>FOOTBALL CLUB - Home</title><?php } ?>
   <!-- Other meta tags, stylesheets, and scripts can be added here -->
   <link rel="stylesheet" href="styles/style.css">
