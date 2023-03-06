@@ -14,7 +14,7 @@
     $url = $_SERVER['REQUEST_URI'];
     if($_SESSION["user"] != "undefined") {
       $user = $_SESSION["user"];
-      ?><title><?php echo($title) ?> - FOOTBALL CLUB - <?php echo ($user) ?></title><?php
+      ?><title>FOOTBALL CLUB - <?php echo($title) ?> - <?php echo ($user) ?></title><?php
     } else if ($url == '/login.php') {
       ?><title>FOOTBALL CLUB - Login</title><?php
      } else {
