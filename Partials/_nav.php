@@ -8,12 +8,6 @@
     <span></span>
     <?php 
     $url = $_SERVER['REQUEST_URI'];
-    if (session_status() == PHP_SESSION_NONE) {
-      session_start();
-  }
-    if($_SESSION == null) {
-      $_SESSION["user"] = "undefined";
-    }
     if($_SESSION["user"] != "undefined") {
       $user = $_SESSION["user"];
 ?><a href="./user.php" id="user-area"><?php echo ($_SESSION["user"]) ?></a>
