@@ -4,10 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 require_once('db_connect.php');
-
-// Sanitize user inputs
-$username = mysqli_real_escape_string($conn, $_POST['email']);
-$password = mysqli_real_escape_string($conn, $_POST['password']);
+// Logout Function!
 if (isset($_POST['logout'])) {
     // Unset all of the session variables
     $_SESSION = array();
@@ -18,6 +15,19 @@ if (isset($_POST['logout'])) {
     // Redirect the user to the login page
     header("Location: /index.php");
     exit();
+}
+// End of Logout Function!
+
+
+
+// Sanitize user inputs
+if(isset($_POST['email']) && isset($_POST['password'])){
+$username = mysqli_real_escape_string($conn, $_POST['email']);
+$password = mysqli_real_escape_string($conn, $_POST['password']);
+} else {
+        // Redirect the user to the login page
+        header("Location: /index.php");
+        exit();
 }
 // Prepare and bind the SQL statement
 $stmt = mysqli_prepare($conn, "SELECT * FROM fb_players WHERE Email = ? AND password = ?");

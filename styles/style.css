@@ -263,7 +263,7 @@ fieldset#user_display>input, fieldset#user_display>textarea{
   padding: 0.5rem;
   font-size: clamp(16px, 2vw, 20px);
   color: var(--black);
-  text-shadow: 0px 0px 4px var(--white);
+  text-shadow: 0px 0px 2px var(--very-light-gray);
 }
 fieldset#user_display>textarea{
   resize: none;

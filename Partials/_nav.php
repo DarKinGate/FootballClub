@@ -16,7 +16,7 @@
     }
     if($_SESSION["user"] != "undefined") {
       $user = $_SESSION["user"];
-?><a href="./user.php" id="user-area">User Area</a>
+?><a href="./user.php" id="user-area"><?php echo ($_SESSION["user"]) ?></a>
 <form action="login.php" method="post">
 <button type="submit" name="logout" id="logout">Logout</button>
 </form>
