@@ -58,7 +58,7 @@ label[for="cr_database"]{
                 Phone VARCHAR(255) NOT NULL,
                 Notes LONGTEXT NOT NULL,
                 Position VARCHAR(255) NOT NULL,
-                Authority VARCHAR(255) NOT NULL
+                Authority ENUM('1', '2', '3') NOT NULL
                 )";
                 if ($conn->query($sql) === FALSE) {
                     echo "Error creating table: " . $conn->error;
