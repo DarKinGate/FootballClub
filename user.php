@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <?php $title = "User Area" ?>
 <?php include("Partials/_head.php"); ?>
 </head>
 <body>

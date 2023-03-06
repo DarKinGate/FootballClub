@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <?php $title = "Gallery" ?>
 <?php include("Partials/_head.php"); ?>
 </head>
 <body>

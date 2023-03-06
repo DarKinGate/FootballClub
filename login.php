@@ -49,6 +49,7 @@ $error = "Wrong username and/or password!";
 require("styles/rstyle.html");
 include("index.php");
 ?>
+    <?php $title = "Login" ?>
     <section id="error"><?php echo $error; ?></section>
 <style>
 #login-failed~#login-field:checked{
