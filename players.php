@@ -3,10 +3,6 @@
   <head>
   <?php $title = "User Area" ?>
 <?php include("Partials/_head.php");
-  //   if ($_SESSION['user'] == "undefined") {
-  //     header("Location: index.php");
-  //     exit();
-  // }
    ?>
 </head>
 <body>
@@ -15,7 +11,7 @@
   </header>
   <?php include("Partials/_nav.php"); ?>
   <content>
-  <?php if (strpos($url, '/user.php') === 0) { ?>
+  <?php if (strpos($url, '/players.php') === 0) { ?>
     <style>
         main {
   width: 100%;
@@ -29,17 +25,13 @@
       <?php } ?>
     <main>
   <?php 
-include("db_user.php");
-if(isset($row['Authority']) && $row['Authority'] < 2 && $row['Authority'] != null && isset($_SESSION['user']) && $row['Email'] == $_SESSION['user']){
+if(isset($row['Authority']) && $row['Authority'] < 2){
   include("Partials/_admin_view_user_content.php");
 } else {
-   include("Partials/_user_main_content.php");
+   include("Partials/_players_main_content.php");
   }
    ?>
 </main>
-<aside>
-  <?php include("Partials/_side_content.php"); ?>
-</aside>
 </content>
   <?php include("Partials/_footer.php"); ?>
 </body>

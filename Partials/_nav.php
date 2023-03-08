@@ -5,6 +5,7 @@
     <a href="./">Home</a>
     <a href="./gallery.php">Gallery</a>
     <a href="./links.php">Links</a>
+    <a href="./players.php">Players</a>
     <span></span>
     <?php 
     $url = $_SERVER['REQUEST_URI'];
