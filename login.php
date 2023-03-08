@@ -40,9 +40,13 @@ mysqli_stmt_execute($stmt);
 $result = mysqli_stmt_get_result($stmt);
 
 // Process the results
-if (mysqli_num_rows($result) == 1) {
+if ($row = mysqli_num_rows($result) == 1) {
     // Do something with the row data
     $_SESSION['user'] = $username;
+$getname = "SELECT * FROM fb_players where Email='$username'";
+$resultname = mysqli_query($conn, $getname);
+$row = mysqli_fetch_assoc($resultname);
+$_SESSION['name'] = ucfirst($row['Name']);
     header("Location: /index.php");
 } else {
 $error = "Wrong username and/or password!";

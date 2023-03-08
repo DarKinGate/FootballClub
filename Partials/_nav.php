@@ -10,7 +10,7 @@
     $url = $_SERVER['REQUEST_URI'];
     if($_SESSION["user"] != "undefined") {
       $user = $_SESSION["user"];
-?><a href="./user.php" id="user-area"><?php echo ($_SESSION["user"]) ?></a>
+?><a href="./user.php" id="user-area"><?php echo ($_SESSION["name"]) ?></a>
 <form action="login.php" method="post">
 <button type="submit" name="logout" id="logout">Logout</button>
 </form>
