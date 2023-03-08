@@ -8,7 +8,7 @@ border: 2px solid var(--too-dark-gray);
 font-size: clamp(16px, 2vw, 20px);
 height: 90%;
 width:100%;
-overflow-y: scroll;
+overflow-y: auto;
 }
 fieldset#all_users>section>form>label.action,
 fieldset#all_users>section>input, fieldset#all_users>textarea, 
@@ -25,6 +25,8 @@ fieldset#all_users>section>label{
     border-radius: 0rem 0.5rem 0.5rem 0rem;
     max-width: 8rem;
     font-size: 0.9rem;
+    text-align: center;
+    transform: translateX(-2px);
   }
   fieldset#all_users>section>form>label.action,
   fieldset#all_users>section>form{
