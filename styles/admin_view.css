@@ -29,11 +29,11 @@ fieldset#all_users>section>label{
   fieldset#all_users>section>form>label.action,
   fieldset#all_users>section>form{
     border-radius: 1rem;
-    display:inline-block;
     margin: 0;
     width: max-content;
     height: auto;
     float: right;
+    cursor: pointer;
   }
   fieldset#all_users>section>form>input.action{
     display:none;
