@@ -63,6 +63,16 @@ label[for="cr_database"]{
                 if ($conn->query($sql) === FALSE) {
                     echo "Error creating table: " . $conn->error;
                 }
+                $sql = "CREATE TABLE IF NOT EXISTS upcoming_matches (
+                  ID INT(255) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                  vs VARCHAR(255) NOT NULL,
+                  location VARCHAR(255) NOT NULL,
+                  match_date date NOT NULL,
+                  match_time time NOT NULL
+                  )";
+                  if ($conn->query($sql) === FALSE) {
+                      echo "Error creating table: " . $conn->error;
+                  }
             header("Location: install_db.php" );
             exit();
            

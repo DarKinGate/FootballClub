@@ -75,5 +75,9 @@ table#all_users>tbody>tr:hover td>a#view_user
 {
     color:var(--very-light-gray);
 }
+table#all_users>tbody>tr>td>a#view_user{
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+}
 
 /* Admin View of User Form End! */
