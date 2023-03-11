@@ -1,8 +1,8 @@
 <?php 
-require_once('db_connect.php');
+require_once("../db_user.php");
 ?>
 <style>
-  <?php require('./styles/user_view.css') ?>
+  <?php require('../styles/user_view.css') ?>
 </style>   
 <table id="all_users">
     <tr id="header">
@@ -24,7 +24,7 @@ while($rows = mysqli_fetch_array($result)){
    <td><input type="text" value="<?php echo($rows['Name']); ?>" size="<?php echo(strlen($rows['Name'])); ?>" disabled></input></td>
     <td><input type="text" value="<?php echo($rows['Last_Name']); ?>" size="<?php echo(strlen($rows['Last_Name'])); ?>" disabled></input></td>
     <td><input type="text" value="<?php echo($rows['Position']); ?>" size="<?php echo(strlen($rows['Position'])); ?>" disabled></input></td>
-    <td><a id="view_user" href="./user.php?id=<?php echo($rows['ID']) ?>">View Player</a></td>
+    <td><a id="view_user" href="../user.php?id=<?php echo($rows['ID']) ?>">View Player</a></td>
 </tr>
 <?php
 } ?>

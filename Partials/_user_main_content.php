@@ -1,5 +1,5 @@
 <?php
-      require_once("db_user.php");
+      require_once("../db_user.php");
       if(isset($row['ID'])){
       ?>
 

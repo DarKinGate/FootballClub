@@ -11,7 +11,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 $url = $_SERVER['REQUEST_URI'];
-if ($url == '/install_db.php') { ?>
+if ($url == '../install_db.php') { ?>
     <style>
         main {
   width: 100%;

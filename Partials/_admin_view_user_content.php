@@ -1,9 +1,9 @@
 <?php
-      require_once("db_user.php");
+      require_once("../db_user.php");
       if(isset($row['ID'])){
       ?>
 <style>
-  <?php require('./styles/admin_view.css') ?>
+  <?php require('../styles/admin_view.css') ?>
 </style>   
 <fieldset id="user_display">
  

@@ -2,17 +2,17 @@
   <input type="checkbox" id="login-failed" style="display:none" checked>
   <nav>
     <!-- Navigation content goes here -->
-    <a href="./">Home</a>
-    <a href="./gallery.php">Gallery</a>
-    <a href="./links.php">Links</a>
-    <a href="./players.php">Players</a>
+    <a href="../">Home</a>
+    <a href="../gallery.php">Gallery</a>
+    <a href="../links.php">Links</a>
+    <a href="../users">Players</a>
     <span></span>
     <?php 
     $url = $_SERVER['REQUEST_URI'];
     if($_SESSION["user"] != "undefined") {
       $user = $_SESSION["user"];
-?><a href="./user.php" id="user-area"><?php echo ($_SESSION["name"]) ?></a>
-<form action="login.php" method="post">
+?><a href="../user.php" id="user-area"><?php echo ($_SESSION["name"]) ?></a>
+<form action="../login.php" method="post">
 <button type="submit" name="logout" id="logout">Logout</button>
 </form>
 </nav>
