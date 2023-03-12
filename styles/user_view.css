@@ -71,6 +71,7 @@ table#all_users>tbody>tr>td>a#view_user{
     text-align: center;
 }
 table#all_users>tbody>tr:hover td>input,
+table#all_users>tbody>tr:hover td>button,
 table#all_users>tbody>tr:hover td>a#view_user
 {
     color:var(--very-light-gray);
@@ -79,5 +80,23 @@ table#all_users>tbody>tr>td>a#view_user{
     text-decoration: underline;
     font-family: 'Courier New', Courier, monospace;
 }
-
+table#all_users>tbody>tr>td>form>input.action{
+  display:none;
+}
+table#all_users>tbody>tr>td>form>label.action{
+  color:var(--white);
+  cursor: pointer;
+  text-shadow: 0px 0px 2px var(--too-dark-gray);
+  box-shadow: 0px 0px 10px 10px var(--dark-gray) inset,
+  0px 0px 4px 10px var(--dark-gray),
+  0px 0px 4px 10px var(--very-light-gray);
+}
+table#all_users>tbody>tr#header>th>a{
+  text-decoration: none;
+  color:var(--very-light-gray);
+}
+table#all_users>tbody>tr#header>th>a:hover{
+  text-decoration: underline;
+  color:var(--light-gray);
+}
 /* Admin View of User Form End! */

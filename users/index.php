@@ -3,6 +3,8 @@
   <head>
   <?php $title = "User Area" ?>
 <?php include("../Partials/_head.php");
+      include("../db_user.php");
+  $user = $_SESSION["user"];
    ?>
 </head>
 <body>
@@ -25,10 +27,12 @@
       <?php } ?>
     <main>
   <?php 
-if(isset($row['Authority']) && $row['Authority'] < 2){
+if(isset($row['Authority']) && $row['Authority'] == 1){
   include("../Partials/_admin_view_user_content.php");
-} else {
-   include("../Partials/_players_main_content.php");
+} else if(isset($row['Authority']) && $row['Authority'] == 2){
+    include("../Partials/_manager_view_user_content.php");
+  } else {
+    include("../Partials/_players_main_content.php");
   }
    ?>
 </main>

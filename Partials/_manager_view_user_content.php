@@ -1,5 +1,5 @@
 <?php
-if(isset($row['Authority']) && $row['Authority'] == 1){
+if(isset($row['Authority']) && $row['Authority'] == 2){
     $url = $_SERVER['DOCUMENT_ROOT'];
       require_once("$url" . "/db_user.php");
       if(isset($row['ID'])){
@@ -17,11 +17,11 @@ if(isset($row['Authority']) && $row['Authority'] == 1){
     <th id="Delete_User"> Delete User </th>
 </tr>
     <?php
-    if(isset($_GET['sort'])){
-        $sort = ("ORDER BY " . $_GET['sort']);
-    } else {
-        $sort = "";
-    }
+        if(isset($_GET['sort'])){
+            $sort = ("ORDER BY " . $_GET['sort']);
+        } else {
+            $sort = "";
+        }
     if(isset($_POST['del-user'])){
         $userID = $_POST['del-user'];
         $sql = "DELETE FROM fb_players where ID=$userID";
@@ -29,15 +29,11 @@ $result = mysqli_query($conn, $sql);
     }
 
 
-    $sql = "SELECT * FROM fb_players WHERE Authority >= 2 $sort";
+    $sql = "SELECT * FROM fb_players WHERE Authority >= 3 $sort";
 $result = mysqli_query($conn, $sql);
 while($rows = mysqli_fetch_array($result)){
     if($rows['Authority'] == 3){
         $authority = 'Player';
-    } else if ($rows['Authority'] == 2){
-        $authority = 'Content Manager';
-    } else {
-        $authority = 'Admin';
     }
     ?>
     <section id="<?php echo($rows['ID']); ?>">
