@@ -31,8 +31,10 @@ if(isset($row['Authority']) && $row['Authority'] == 1){
   include("../Partials/_admin_view_user_content.php");
 } else if(isset($row['Authority']) && $row['Authority'] == 2){
     include("../Partials/_manager_view_user_content.php");
-  } else {
+  } else if(isset($row['Authority']) && $row['Authority'] == 3){
     include("../Partials/_players_main_content.php");
+  } else {
+    include("../Partials/_guest_main_content.php");
   }
    ?>
 </main>

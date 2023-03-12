@@ -9,7 +9,6 @@ require_once("../db_user.php");
     <th id="first_name"><a href="?sort=Name">Firstname</a></th>
     <th id="last_name"><a href="?sort=Last_Name">Lastname</a></th>
     <th id="position"><a href="?sort=Position">Position</a></th>
-    <th id="view_player"> View Player </th>
 </tr>
     <?php
 if(isset($_GET['sort'])){
@@ -25,8 +24,7 @@ while($rows = mysqli_fetch_array($result)){
     <tr class="all_users" id="<?php echo($rows['ID']); ?>">
    <td><input type="text" value="<?php echo($rows['Name']); ?>" size="<?php echo(strlen($rows['Name'])); ?>" disabled></input></td>
     <td><input type="text" value="<?php echo($rows['Last_Name']); ?>" size="<?php echo(strlen($rows['Last_Name'])); ?>" disabled></input></td>
-    <td><input type="text" value="<?php echo($rows['Position']); ?>" size="<?php echo(strlen($rows['Position'])); ?>" disabled></input></td>
-    <td><a id="view_user" href="../user.php?id=<?php echo($rows['ID']) ?>">View Player</a></td></tr>
+    <td><input type="text" value="<?php echo($rows['Position']); ?>" size="<?php echo(strlen($rows['Position'])); ?>" disabled></input></td></tr>
 <?php
 } ?>
 </table>
