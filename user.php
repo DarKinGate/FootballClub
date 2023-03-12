@@ -25,13 +25,16 @@
   flex-shrink: 0;
   flex-grow: 0;
 }
+content{
+  height: 72.6%
+}
     </style>
       <?php } ?>
     <main>
   <?php 
-include("db_user.php");
+  include("db_user.php");
 if(isset($row['Authority']) && $row['Authority'] < 2 && $row['Authority'] != null && isset($_SESSION['user']) && $row['Email'] == $_SESSION['user']){
-  include("Partials/_admin_view_user_content.php");
+  include("Partials/_admin_page.php");
 } else {
    include("Partials/_user_main_content.php");
   }

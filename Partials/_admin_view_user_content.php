@@ -17,10 +17,14 @@ if(isset($row['Authority']) && $row['Authority'] == 1){
     <th id="Delete_User"> Delete User </th>
 </tr>
     <?php
+        $sort = null;
     if(isset($_GET['sort'])){
+        if($sort = ("ORDER BY " . $_GET['sort'])){
+            echo ($sort . ' REVERSE');
+        } else {
         $sort = ("ORDER BY " . $_GET['sort']);
-    } else {
-        $sort = "";
+        echo ($sort);
+        }
     }
     if(isset($_POST['del-user'])){
         $userID = $_POST['del-user'];

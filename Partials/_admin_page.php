@@ -1,0 +1,12 @@
+<table>
+    <th>asd</th>
+    <th>asdasd</th>
+    <tr>
+        <td>addslashes</td>
+        <td>addslashesasdasd</td>
+        </tr>
+    <tr>
+        <td>asdasd</td>
+        <td>asdasdasd</td>
+</tr>
+</table>
