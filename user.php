@@ -3,6 +3,7 @@
   <head>
   <?php $title = "User Area" ?>
 <?php include("Partials/_head.php");
+  include("db_user.php");
   //   if ($_SESSION['user'] == "undefined") {
   //     header("Location: index.php");
   //     exit();
@@ -15,7 +16,14 @@
   </header>
   <?php include("Partials/_nav.php"); ?>
   <content>
-  <?php if (strpos($url, '/user.php') === 0) { ?>
+    <?php
+  if(isset($row['Authority']) && $row['Authority'] < 2 && $row['Authority'] != null && isset($_SESSION['user']) && $row['Email'] == $_SESSION['user'] && (strpos($url, '/user.php') === 0)){
+    $url = $_SERVER['DOCUMENT_ROOT'];
+   ?>
+ <style>
+<?php include($url . "/styles/admin_view.css"); ?>
+ </style>
+  <?php } else if (strpos($url, '/user.php') === 0) { ?>
     <style>
         main {
   width: 100%;
@@ -32,17 +40,14 @@ content{
       <?php } ?>
     <main>
   <?php 
-  include("db_user.php");
 if(isset($row['Authority']) && $row['Authority'] < 2 && $row['Authority'] != null && isset($_SESSION['user']) && $row['Email'] == $_SESSION['user']){
+  $url = $_SERVER['DOCUMENT_ROOT'];
   include("Partials/_admin_page.php");
 } else {
    include("Partials/_user_main_content.php");
   }
    ?>
 </main>
-<aside>
-  <?php include("Partials/_side_content.php"); ?>
-</aside>
 </content>
   <?php include("Partials/_footer.php"); ?>
 </body>

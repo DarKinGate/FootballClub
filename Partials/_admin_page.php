@@ -1,6 +1,9 @@
+<?php if(isset($row['Authority']) && $row['Authority'] == 1){
+      if(isset($row['ID'])){
+      ?>
 <table>
     <th>asd</th>
-    <th>asdasd</th>
+    <th>abassd</th>
     <tr>
         <td>addslashes</td>
         <td>addslashesasdasd</td>
@@ -10,3 +13,4 @@
         <td>asdasdasd</td>
 </tr>
 </table>
+<?php }} ?>
