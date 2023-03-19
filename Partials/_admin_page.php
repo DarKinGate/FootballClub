@@ -3,7 +3,7 @@
       ?>
 <table>
     <tr>
-    <th colspan="2">users</th></tr>
+    <th colspan="16">users</th></tr>
     <th>asd</th>
     <th>abassd</th>
     <tr>

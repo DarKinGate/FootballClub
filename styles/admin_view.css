@@ -73,6 +73,7 @@
             background-color: inherit;
             cursor: default;
             transition: background-color 0.5s;
+            padding: 0.25rem;
           }
           table>tbody>tr>td:hover{
             background-color: var(--too-dark-gray);
