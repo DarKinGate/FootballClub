@@ -105,7 +105,7 @@
           0px 0px 4px 10px var(--dark-gray),
           0px 0px 4px 10px var(--very-light-gray);
         }
-        table>tbody>tr>th{
+        table>tbody>tr>th[colspan="2"], table>tbody>tr>th{
           cursor: default;
           text-decoration: none;
           color:var(--very-light-gray);
@@ -113,6 +113,10 @@
           transition: all 0.5s;
           font-size: clamp(20px, 2vw, 26px);
           padding: 0.5rem;
+        }
+        table>tbody>tr>th{
+          font-size: clamp(16px, 2vw, 20px);
+          padding: 0.2rem;
         }
         table>tbody>tr>th:hover{
           background-color: var(--very-light-gray);
