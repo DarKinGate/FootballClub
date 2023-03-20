@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <?php $title = "Install" ?>
 <?php include("Partials/_head.php"); ?>
 </head>
 <body>
