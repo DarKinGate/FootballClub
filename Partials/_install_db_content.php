@@ -102,6 +102,9 @@ fieldset[id="user_display"]>form[method="post"]{
                   $sql = "INSERT INTO `fb_players` (`ID`, `Email`, `Password`, `Name`, `Last_Name`, `Phone`, `Notes`, `Position`, `Authority`) VALUES (NULL, '$admail', '$adpass', '$adname', '', '', '', '', '1');";
                      if ($conn->query($sql) === FALSE) {
                       echo "Error creating Admin: " . $conn->error;
+                  } else {
+                    $_SESSION['user'] = $admail;
+                    $_SESSION['name'] = ucfirst($adname);
                   }
             header("Location: install_db.php" );
             exit();
