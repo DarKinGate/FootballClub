@@ -6,7 +6,13 @@ if(isset($row['Authority']) && $row['Authority'] == 1){
       ?>
 <style>
   <?php require("$url" . "/styles/user_view.css") ?>
+  input[id="add_new_player"]{
+    position: relative;
+    height: 100px;
+    display:block;
+  }
 </style>   
+<input id="add_new_player" type="button" value="Add New Player"><br style="clear: both" />
 <table id="all_users">
     <tr id="header">
     <th id="first_name"><a href="?sort=Name">Firstname</a></th>
@@ -76,3 +82,4 @@ while($rows = mysqli_fetch_array($result)){
 </fieldset>
     <?php }} ?>
     </table>
+    <input id="add_new_player" type="button" value="Add New Player">
