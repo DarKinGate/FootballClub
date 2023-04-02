@@ -15,10 +15,7 @@ $url = $_SERVER['REQUEST_URI'];
 $sql = "SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = '$db_name'";
 $result = $conn->query($sql);
 if ($result->num_rows == 0) {
-header("Location: install_db.php");
-exit();
+    header("Location: install_db.php");
+    exit();
 }
 $conn->select_db($db_name);
-
-
-?>

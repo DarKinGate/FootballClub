@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
   <?php $title = "User Area" ?>
-<?php include("../Partials/_head.php");
-      include("../db_user.php");
+  <?php include("../Partials/_head.php");
+  include("../db_user.php");
   $user = $_SESSION["user"];
-   ?>
+  ?>
 </head>
+
 <body>
   <header>
-  <?php include("../Partials/_header.php"); ?>
+    <?php include("../Partials/_header.php"); ?>
   </header>
   <?php include("../Partials/_nav.php"); ?>
   <content>
-  <?php if (strpos($url, '/users/') === 0) { ?>
-    <style>
+    <?php if (strpos($url, '/users/') === 0) { ?>
+      <style>
         main {
-  width: 100%;
-  flex-shrink: 0;
-  display: flex;
-  flex-basis: auto;
-  flex-shrink: 0;
-  flex-grow: 0;
-}
-    </style>
-      <?php } ?>
+          width: 100%;
+          flex-shrink: 0;
+          display: flex;
+          flex-basis: auto;
+          flex-shrink: 0;
+          flex-grow: 0;
+        }
+      </style>
+    <?php } ?>
     <main>
-  <?php 
-if(isset($row['Authority']) && $row['Authority'] == 1){
-  include("../Partials/_admin_view_user_content.php");
-} else if(isset($row['Authority']) && $row['Authority'] == 2){
-    include("../Partials/_manager_view_user_content.php");
-  } else if(isset($row['Authority']) && $row['Authority'] == 3){
-    include("../Partials/_players_main_content.php");
-  } else {
-    include("../Partials/_guest_main_content.php");
-  }
-   ?>
-</main>
-</content>
+      <?php
+      if (isset($row['Authority']) && $row['Authority'] == 1) {
+        include("../Partials/_admin_view_user_content.php");
+      } else if (isset($row['Authority']) && $row['Authority'] == 2) {
+        include("../Partials/_manager_view_user_content.php");
+      } else if (isset($row['Authority']) && $row['Authority'] == 3) {
+        include("../Partials/_players_main_content.php");
+      } else {
+        include("../Partials/_guest_main_content.php");
+      }
+      ?>
+    </main>
+  </content>
   <?php include("../Partials/_footer.php"); ?>
 </body>
+
 </html>

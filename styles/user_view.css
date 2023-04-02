@@ -1,102 +1,113 @@
       /* Admin View of User Form Start! */
 
-table#all_users{
-background: var(--dark-gray);
-border: 2px solid var(--too-dark-gray);
-font-size: clamp(16px, 2vw, 20px);
-height: 90%;
-width:80%;
-position: absolute;
-left:50%;
-transform: translateX(-50%);
-overflow-y: auto;
-max-height: 50%;
-height: auto;
-border-color: var(--dark-gray);
-text-align: center;
-border-spacing: 0.1rem;
-padding: 1rem;
-}
+      table#all_users {
+        background: var(--dark-gray);
+        border: 2px solid var(--too-dark-gray);
+        font-size: clamp(16px, 2vw, 20px);
+        height: 90%;
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow-y: auto;
+        max-height: 50%;
+        height: auto;
+        border-color: var(--dark-gray);
+        text-align: center;
+        border-spacing: 0.1rem;
+        padding: 1rem;
+      }
 
 
 
-table#all_users>tbody>tr.all_users>td>input,
-table#all_users>tbody>tr>form>td>label.action,
-table#all_users>tbody>tr>td>input, 
-table#all_users>tbody>tr>td>label,
-table#all_users>tbody>tr>td>a#view_user{
-    background: none;
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 1.3rem;
-    text-shadow: 0px 0px 2px var(--very-light-gray);
-    text-decoration: none;
-    padding: 15px;
-    width:90%;
-    transition: color 0.5s;
-  }
+      table#all_users>tbody>tr.all_users>td>input,
+      table#all_users>tbody>tr>form>td>label.action,
+      table#all_users>tbody>tr>td>input,
+      table#all_users>tbody>tr>td>label,
+      table#all_users>tbody>tr>td>a#view_user {
+        background: none;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1.3rem;
+        text-shadow: 0px 0px 2px var(--very-light-gray);
+        text-decoration: none;
+        padding: 15px;
+        width: 90%;
+        transition: color 0.5s;
+      }
 
 
-  table#all_users>tbody>tr>input,
-  table#all_users>tbody>tr>a#view_user,
-  table#all_users>tbody>tr#header{
-    border-radius: 0.5rem;
-    font-size: 1.2rem;
-  }
-  table#all_users>tbody>tr>a#view_user{
-    border-radius: 0.5rem;
-  }
-  table#all_users>tbody>tr#header{
-    font-size: 2rem;
-    background-color: var(--too-dark-gray);
-    color: var(--light-gray);
-  }
-  table#all_users>tbody>tr{
-    height: auto;
-    background: var(--light-gray);
-    padding: 0.5rem;
-    border-radius: 1rem;
-    transition: background-color 0.5s;
-  }
-  table#all_users>tbody>tr:nth-child(odd) {
-    background-color: var(--very-light-gray);
-  }
-  table#all_users>tbody>tr:hover{
-    background-color: var(--too-dark-gray);
-  }
-  table#all_users>tbody>tr>td>input,
-  table#all_users>tbody>tr>td>a#view_user
-  {
-    color:var(--black);
-    text-align: center;
-}
-table#all_users>tbody>tr:hover td>input,
-table#all_users>tbody>tr:hover td>button,
-table#all_users>tbody>tr:hover td>a#view_user
-{
-    color:var(--very-light-gray);
-}
-table#all_users>tbody>tr>td>a#view_user{
-    text-decoration: underline;
-    font-family: 'Courier New', Courier, monospace;
-}
-table#all_users>tbody>tr>td>form>input.action{
-  display:none;
-}
-table#all_users>tbody>tr>td>form>label.action{
-  color:var(--white);
-  cursor: pointer;
-  text-shadow: 0px 0px 2px var(--too-dark-gray);
-  box-shadow: 0px 0px 10px 10px var(--dark-gray) inset,
-  0px 0px 4px 10px var(--dark-gray),
-  0px 0px 4px 10px var(--very-light-gray);
-}
-table#all_users>tbody>tr#header>th>a{
-  text-decoration: none;
-  color:var(--very-light-gray);
-}
-table#all_users>tbody>tr#header>th>a:hover{
-  text-decoration: underline;
-  color:var(--light-gray);
-}
-/* Admin View of User Form End! */
+      table#all_users>tbody>tr>input,
+      table#all_users>tbody>tr>a#view_user,
+      table#all_users>tbody>tr#header {
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+      }
+
+      table#all_users>tbody>tr>a#view_user {
+        border-radius: 0.5rem;
+      }
+
+      table#all_users>tbody>tr#header {
+        font-size: 2rem;
+        background-color: var(--too-dark-gray);
+        color: var(--light-gray);
+      }
+
+      table#all_users>tbody>tr {
+        height: auto;
+        background: var(--light-gray);
+        padding: 0.5rem;
+        border-radius: 1rem;
+        transition: background-color 0.5s;
+      }
+
+      table#all_users>tbody>tr:nth-child(odd) {
+        background-color: var(--very-light-gray);
+      }
+
+      table#all_users>tbody>tr:hover {
+        background-color: var(--too-dark-gray);
+      }
+
+      table#all_users>tbody>tr>td>input,
+      table#all_users>tbody>tr>td>a#view_user {
+        color: var(--black);
+        text-align: center;
+      }
+
+      table#all_users>tbody>tr:hover td>input,
+      table#all_users>tbody>tr:hover td>button,
+      table#all_users>tbody>tr:hover td>a#view_user {
+        color: var(--very-light-gray);
+      }
+
+      table#all_users>tbody>tr>td>a#view_user {
+        text-decoration: underline;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      table#all_users>tbody>tr>td>form>input.action {
+        display: none;
+      }
+
+      table#all_users>tbody>tr>td>form>label.action {
+        color: var(--white);
+        cursor: pointer;
+        text-shadow: 0px 0px 2px var(--too-dark-gray);
+        box-shadow: 0px 0px 10px 10px var(--dark-gray) inset,
+          0px 0px 4px 10px var(--dark-gray),
+          0px 0px 4px 10px var(--very-light-gray);
+      }
+
+      table#all_users>tbody>tr#header>th>a {
+        text-decoration: none;
+        color: var(--very-light-gray);
+      }
+
+      table#all_users>tbody>tr#header>th>a:hover {
+        text-decoration: underline;
+        color: var(--light-gray);
+      }
+
+      /* Admin View of User Form End! */

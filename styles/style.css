@@ -229,36 +229,41 @@ main {
 
 
 /* User Form Start! */
-fieldset#user_display{
-display: flex;
-flex-direction: column;
-background: var(--darker-gray);
-border: 2px solid var(--too-dark-gray);
-font-size: clamp(16px, 2vw, 20px);
-height: 90%;
-width: 50%;
-flex-shrink: 0;
-flex-basis: auto;
+fieldset#user_display {
+  display: flex;
+  flex-direction: column;
+  background: var(--darker-gray);
+  border: 2px solid var(--too-dark-gray);
+  font-size: clamp(16px, 2vw, 20px);
+  height: 90%;
+  width: 50%;
+  flex-shrink: 0;
+  flex-basis: auto;
 }
-fieldset#user_display>label{
-  display:table;
+
+fieldset#user_display>label {
+  display: table;
   margin-top: 1rem;
   background: var(--light-gray);
   border: 2px solid var(--too-dark-gray);
-  border-bottom:none;
+  border-bottom: none;
   border-radius: 0.5rem 0.5rem 0 0;
   padding: 0 0.5rem;
   margin-top: 1rem;
   z-index: 1;
 }
-fieldset#user_display>legend,fieldset#all_users>legend{
+
+fieldset#user_display>legend,
+fieldset#all_users>legend {
   background: var(--light-gray);
   border: 2px solid var(--too-dark-gray);
   border-radius: 0.5rem;
   padding: 0.5rem;
   margin-top: 1rem;
 }
-fieldset#user_display>input, fieldset#user_display>textarea{
+
+fieldset#user_display>input,
+fieldset#user_display>textarea {
   background: var(--light-gray);
   border: 2px solid var(--too-dark-gray);
   border-radius: 0rem 0.5rem 0.5rem 0.5rem;
@@ -267,10 +272,12 @@ fieldset#user_display>input, fieldset#user_display>textarea{
   color: var(--black);
   text-shadow: 0px 0px 2px var(--very-light-gray);
 }
-fieldset#user_display>textarea{
+
+fieldset#user_display>textarea {
   resize: none;
   height: 100%;
 }
+
 /* User Form End! */
 
 

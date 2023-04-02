@@ -1,4 +1,3 @@
-
 <?php
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -21,13 +20,13 @@ if (isset($_POST['logout'])) {
 
 
 // Sanitize user inputs
-if(isset($_POST['email']) && isset($_POST['password'])){
-$username = mysqli_real_escape_string($conn, $_POST['email']);
-$password = mysqli_real_escape_string($conn, $_POST['password']);
+if (isset($_POST['email']) && isset($_POST['password'])) {
+    $username = mysqli_real_escape_string($conn, $_POST['email']);
+    $password = mysqli_real_escape_string($conn, $_POST['password']);
 } else {
-        // Redirect the user to the login page
-        header("Location: /index.php");
-        exit();
+    // Redirect the user to the login page
+    header("Location: /index.php");
+    exit();
 }
 // Prepare and bind the SQL statement
 $stmt = mysqli_prepare($conn, "SELECT * FROM fb_players WHERE Email = ? AND password = ?");
@@ -43,33 +42,34 @@ $result = mysqli_stmt_get_result($stmt);
 if ($row = mysqli_num_rows($result) == 1) {
     // Do something with the row data
     $_SESSION['user'] = $username;
-$getname = "SELECT * FROM fb_players where Email='$username'";
-$resultname = mysqli_query($conn, $getname);
-$row = mysqli_fetch_assoc($resultname);
-$_SESSION['name'] = ucfirst($row['Name']);
+    $getname = "SELECT * FROM fb_players where Email='$username'";
+    $resultname = mysqli_query($conn, $getname);
+    $row = mysqli_fetch_assoc($resultname);
+    $_SESSION['name'] = ucfirst($row['Name']);
     header("Location: /index.php");
 } else {
-$error = "Wrong username and/or password!";
-require("styles/rstyle.html");
-include("index.php");
+    $error = "Wrong username and/or password!";
+    require("styles/rstyle.html");
+    include("index.php");
 ?>
     <?php $title = "Login" ?>
     <section id="error"><?php echo $error; ?></section>
-<style>
-#login-failed~#login-field:checked{
-  transition: 1s;
-  z-index: 1;
-  opacity: 1;
-  transform: translate(-50%, -50%);
-}
-#login~#login-field::before {
-content: "Wrong username and/or password!";
-color: red;
-position:relative;
-left:10%;
-font-size: 1.5rem;
-}
-</style>
+    <style>
+        #login-failed~#login-field:checked {
+            transition: 1s;
+            z-index: 1;
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+
+        #login~#login-field::before {
+            content: "Wrong username and/or password!";
+            color: red;
+            position: relative;
+            left: 10%;
+            font-size: 1.5rem;
+        }
+    </style>
 <?php
 }
 // Close the database connection

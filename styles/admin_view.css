@@ -7,11 +7,13 @@
         flex-grow: 0;
         flex-flow: wrap;
       }
-      content{
+
+      content {
         height: 100vh;
         overflow-y: auto;
       }
-      table{
+
+      table {
         background: var(--dark-gray);
         border: 2px solid var(--too-dark-gray);
         font-size: clamp(16px, 2vw, 20px);
@@ -24,103 +26,117 @@
         border-spacing: 0.1rem;
         padding: 0.5rem;
         margin: 1rem 0rem 0rem 1rem;
-        }
-        
-        
-        
-        table>tbody>tr.all_users>td>input,
-        table>tbody>tr>form>td>label.action,
-        table>tbody>tr>td>input, 
-        table>tbody>tr>td>label,
-        table>tbody>tr>td>a#view_user{
-            background: none;
-            border: none;
-            border-radius: 0.5rem;
-            font-size: 1.3rem;
-            text-shadow: 0px 0px 2px var(--very-light-gray);
-            text-decoration: none;
-            padding: 15px;
-            width:90%;
-            transition: color 0.5s;
-          }
-        
-        
-          table>tbody>tr>input,
-          table>tbody>tr>a#view_user,
-          table>tbody>tr#header{
-            border-radius: 0.5rem;
-            font-size: 1.2rem;
-          }
-          table>tbody>tr>a#view_user{
-            border-radius: 0.5rem;
-          }
-          table>tbody>tr#header{
-            font-size: 2rem;
-            background-color: var(--too-dark-gray);
-            color: var(--light-gray);
-          }
-          table>tbody>tr{
-            height: auto;
-            background: var(--light-gray);
-            padding: 0.5rem;
-            border-radius: 1rem;
-            transition: background-color 0.5s;
-          }
-          table>tbody>tr:nth-child(odd) {
-            background-color: var(--very-light-gray);
-          }
-          table>tbody>tr>td{
-            background-color: inherit;
-            cursor: default;
-            transition: background-color 0.5s;
-            padding: 0.25rem;
-          }
-          table>tbody>tr>td:hover{
-            background-color: var(--too-dark-gray);
-            cursor: default;
-          }
-          table>tbody>tr>td>input,
-          table>tbody>tr>td>a#view_user
-          {
-            color:var(--black);
-            text-align: center;
-        }
-        table>tbody>tr:hover td>input,
-        table>tbody>tr:hover td>button,
-        table>tbody>tr:hover td>a#view_user
-        {
-            color:var(--very-light-gray);
-        }
-        table>tbody>tr>td>a#view_user{
-            text-decoration: underline;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        table>tbody>tr>td>form>input.action{
-          display:none;
-        }
-        table>tbody>tr>td>form>label.action{
-          color:var(--white);
-          cursor: pointer;
-          text-shadow: 0px 0px 2px var(--too-dark-gray);
-          box-shadow: 0px 0px 10px 10px var(--dark-gray) inset,
+      }
+
+
+
+      table>tbody>tr.all_users>td>input,
+      table>tbody>tr>form>td>label.action,
+      table>tbody>tr>td>input,
+      table>tbody>tr>td>label,
+      table>tbody>tr>td>a#view_user {
+        background: none;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1.3rem;
+        text-shadow: 0px 0px 2px var(--very-light-gray);
+        text-decoration: none;
+        padding: 15px;
+        width: 90%;
+        transition: color 0.5s;
+      }
+
+
+      table>tbody>tr>input,
+      table>tbody>tr>a#view_user,
+      table>tbody>tr#header {
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+      }
+
+      table>tbody>tr>a#view_user {
+        border-radius: 0.5rem;
+      }
+
+      table>tbody>tr#header {
+        font-size: 2rem;
+        background-color: var(--too-dark-gray);
+        color: var(--light-gray);
+      }
+
+      table>tbody>tr {
+        height: auto;
+        background: var(--light-gray);
+        padding: 0.5rem;
+        border-radius: 1rem;
+        transition: background-color 0.5s;
+      }
+
+      table>tbody>tr:nth-child(odd) {
+        background-color: var(--very-light-gray);
+      }
+
+      table>tbody>tr>td {
+        background-color: inherit;
+        cursor: default;
+        transition: background-color 0.5s;
+        padding: 0.25rem;
+      }
+
+      table>tbody>tr>td:hover {
+        background-color: var(--too-dark-gray);
+        cursor: default;
+      }
+
+      table>tbody>tr>td>input,
+      table>tbody>tr>td>a#view_user {
+        color: var(--black);
+        text-align: center;
+      }
+
+      table>tbody>tr:hover td>input,
+      table>tbody>tr:hover td>button,
+      table>tbody>tr:hover td>a#view_user {
+        color: var(--very-light-gray);
+      }
+
+      table>tbody>tr>td>a#view_user {
+        text-decoration: underline;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      table>tbody>tr>td>form>input.action {
+        display: none;
+      }
+
+      table>tbody>tr>td>form>label.action {
+        color: var(--white);
+        cursor: pointer;
+        text-shadow: 0px 0px 2px var(--too-dark-gray);
+        box-shadow: 0px 0px 10px 10px var(--dark-gray) inset,
           0px 0px 4px 10px var(--dark-gray),
           0px 0px 4px 10px var(--very-light-gray);
-        }
-        table>tbody>tr>th[colspan="2"], table>tbody>tr>th{
-          cursor: default;
-          text-decoration: none;
-          color:var(--very-light-gray);
-          background-color: var(--too-dark-gray);
-          transition: all 0.5s;
-          font-size: clamp(20px, 2vw, 26px);
-          padding: 0.5rem;
-        }
-        table>tbody>tr>th{
-          font-size: clamp(16px, 2vw, 20px);
-          padding: 0.2rem;
-        }
-        table>tbody>tr>th:hover{
-          background-color: var(--very-light-gray);
-          color:var(--dark-gray);
-        }
-        /* Admin View of User Form End! */
+      }
+
+      table>tbody>tr>th[colspan="2"],
+      table>tbody>tr>th {
+        cursor: default;
+        text-decoration: none;
+        color: var(--very-light-gray);
+        background-color: var(--too-dark-gray);
+        transition: all 0.5s;
+        font-size: clamp(20px, 2vw, 26px);
+        padding: 0.5rem;
+      }
+
+      table>tbody>tr>th {
+        font-size: clamp(16px, 2vw, 20px);
+        padding: 0.2rem;
+      }
+
+      table>tbody>tr>th:hover {
+        background-color: var(--very-light-gray);
+        color: var(--dark-gray);
+      }
+
+      /* Admin View of User Form End! */
