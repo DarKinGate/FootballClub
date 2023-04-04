@@ -13,11 +13,13 @@ if ($_SESSION == null) {
 $url = $_SERVER['REQUEST_URI'];
 if ($_SESSION["user"] != "undefined") {
   $user = $_SESSION["user"];
-?><title>FOOTBALL CLUB - <?php echo ($title) ?> - <?php echo ($user) ?></title><?php
-                                                                                  } else if ($url == '../login.php') {
-                                                                                    ?><title>FOOTBALL CLUB - Login</title><?php
-                                                                                  } else {
-                                            ?>
+?><title>FOOTBALL CLUB - <?php echo ($title) ?> - <?php echo ($user) ?></title>
+<?php
+} else if ($url == '../login.php') {
+?><title>FOOTBALL CLUB - Login</title>
+<?php
+} else {
+?>
   <title>FOOTBALL CLUB - <?php echo ($title) ?></title><?php } ?>
 <!-- Other meta tags, stylesheets, and scripts can be added here -->
 <link rel="stylesheet" href="../styles/style.css">

@@ -5,13 +5,38 @@ if (isset($row['Authority']) && $row['Authority'] == 1) {
     if (isset($row['ID'])) {
 ?>
         <style>
-            <?php require("$url" . "/styles/user_view.css") ?>input[id="add_new_player"] {
+            <?php require("$url" . "/styles/user_view.css") ?>
+            a[id="add_player"] {
+                height: 2rem;
+                text-align: center;
+                background-color: #333;
+                display: inline-block;
                 position: relative;
-                height: 100px;
-                display: block;
+                left: 50%;
+                transform: translatex(-50%);
+                padding: 0.25rem 0.5rem;
+                border-radius: 0rem 0rem 1rem 1rem;
+                text-decoration: none;
+                color: var(--light-gray);
+                line-height: 2rem;
+                border: 2px solid var(--light-gray);
+                border-top: none;
+                font-size: 1.5rem;
+                transition: 0.5s;
+            }
+            a[id="add_player"]:first-of-type{
+                margin-top: 1rem;
+                border-radius: 1rem 1rem 0rem 0rem;
+                border-top: 2px solid var(--light-gray);
+                border-bottom: none;
+            }
+            a[id="add_player"]:hover{
+                background-color: var(--light-gray);
+                color: var(--very-dark-gray);
+                border-color: #333;
             }
         </style>
-        <input id="add_new_player" type="button" value="Add New Player"><br style="clear: both" />
+        <a href="../add_a_new_player.php" id="add_player">Add a New Player</a>
         <table id="all_users">
             <tr id="header">
                 <th id="first_name"><a href="?sort=Name">Firstname</a></th>
@@ -23,14 +48,14 @@ if (isset($row['Authority']) && $row['Authority'] == 1) {
             </tr>
             <?php
             $sort = null;
-            if (isset($_GET['sort'])) {
-                if ($sort = ("ORDER BY " . $_GET['sort'])) {
-                    echo ($sort . ' REVERSE');
-                } else {
-                    $sort = ("ORDER BY " . $_GET['sort']);
-                    echo ($sort);
-                }
-            }
+            // if (isset($_GET['sort'])) {
+            //     if ($sort = ("ORDER BY " . $_GET['sort'])) {
+            //         echo ($sort . ' REVERSE');
+            //     } else {
+            //         $sort = ("ORDER BY " . $_GET['sort']);
+            //         echo ($sort);
+            //     }
+            // }
             if (isset($_POST['del-user'])) {
                 $userID = $_POST['del-user'];
                 $sql = "DELETE FROM fb_players where ID=$userID";
@@ -86,4 +111,4 @@ if (isset($row['Authority']) && $row['Authority'] == 1) {
             <?php }
         } ?>
         </table>
-        <input id="add_new_player" type="button" value="Add New Player">
+        <a href="../add_a_new_player.php" id="add_player">Add a New Player</a>

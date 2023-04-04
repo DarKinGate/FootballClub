@@ -25,21 +25,6 @@
       <style>
         <?php include($url . "/styles/admin_view.css"); ?>
       </style>
-    <?php } else if (strpos($url, '/user.php') === 0) { ?>
-      <style>
-        main {
-          width: 100%;
-          flex-shrink: 0;
-          display: flex;
-          flex-basis: auto;
-          flex-shrink: 0;
-          flex-grow: 0;
-        }
-
-        content {
-          height: 72.6%
-        }
-      </style>
     <?php } ?>
     <main>
       <?php
