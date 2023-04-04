@@ -216,7 +216,8 @@ content {
   display: flex;
   flex-direction: row;
   flex-grow: 0;
-  height: 71.4%;
+  height: 100%;
+  overflow-y: auto;
 }
 
 /* end of Container styling witch includes <main> and <aside> */

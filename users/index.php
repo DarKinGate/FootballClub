@@ -19,9 +19,9 @@
     <main>
       <?php
       if (isset($row['Authority']) && $row['Authority'] == 1) {
-        include("../Partials/_admin_view_user_content.php");
+        include("../Partials/Admin_View/_user_content.php");
       } else if (isset($row['Authority']) && $row['Authority'] == 2) {
-        include("../Partials/_manager_view_user_content.php");
+        include("../Partials/Admin_View/_manager_view_user_content.php");
       } else if (isset($row['Authority']) && $row['Authority'] == 3) {
         include("../Partials/_players_main_content.php");
       } else {

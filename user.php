@@ -30,7 +30,7 @@
       <?php
       if (isset($row['Authority']) && $row['Authority'] < 2 && $row['Authority'] != null && isset($_SESSION['user']) && $row['Email'] == $_SESSION['user']) {
         $url = $_SERVER['DOCUMENT_ROOT'];
-        include("Partials/_admin_page.php");
+        include("Partials/Admin_View/_admin_page.php");
       } else {
         include("Partials/_user_main_content.php");
       }
