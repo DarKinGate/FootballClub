@@ -227,6 +227,7 @@ main {
   overflow-y: auto;
   background: var(--darker-gray);
   width: 100%;
+  padding: 1rem;
 }
 
 
