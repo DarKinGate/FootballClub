@@ -8,6 +8,8 @@ if ($url === '/gallery.php') {
   require($_SERVER['DOCUMENT_ROOT'] . '/Partials/Handlers/_links_handler.php');
 } elseif ($url === '/') {
   require($_SERVER['DOCUMENT_ROOT'] . '/Partials/Handlers/_home_page_handler.php');
+} elseif ($url === '/login.php') {
+  require($_SERVER['DOCUMENT_ROOT'] . '/Partials/_login.php');
 } else {
   // Handle unknown requests
   echo "Page not found";

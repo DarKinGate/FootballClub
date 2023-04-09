@@ -14,6 +14,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/db_connect.php');
         max-height: calc(var(--base-size) + 6rem);
         background-color: #333;
         display: -webkit-box;
+        position: relative;
         text-align: center;
         overflow: hidden;
         text-overflow: "----";
@@ -21,16 +22,39 @@ require($_SERVER['DOCUMENT_ROOT'] . '/db_connect.php');
         -webkit-box-orient: vertical;
         box-shadow: 0 0 5px 2px var(--dark-gray);
         border-radius: 1rem;
+        transition: 0.25s;
     }
     img[class="gallery_img"]{
         background-color: #999;
         height: 100%;
         width: auto;
-        box-shadow: 0 0 5 2 black inset;
+        box-shadow: 0 0 10px 5px black inset;
         transition: 0.25s;
     }
     img[class="gallery_img"]:hover{
         transform: scale(1.25);
+    }
+    button[name='del']{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        left: 0px;
+        transform: translatey(-100%);
+        padding: 0.5rem;
+        transition: 0.25s;
+        background-color: #33333370;
+        font-size: 1rem;
+        border: none;
+    }
+    button[name='del']:hover{
+        background-color: #333333d8;
+    }
+    picture:hover button[name='del']{
+        transform: translatey(0%);
+    }
+    img[id="delete_ico"]{
+        height: 1rem;
+        width: auto;
     }
     h3{
         display: block;
@@ -42,11 +66,26 @@ require($_SERVER['DOCUMENT_ROOT'] . '/db_connect.php');
 <picture>
 <?php
 // Check if form is submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['del'])) {
+$dir_path = "$host/gallery/uploads/$_POST[del]";
+if(is_dir($dir_path)){
+    if (is_dir($dir_path)) {
+        $files = glob($dir_path . '/*');
+        foreach($files as $file) {
+            if(is_file($file)) {
+                unlink($file);
+            }
+        }
+    }
+    rmdir($dir_path);
+}
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['image'])) {
 
     // Get custom name and create directory
     $custom_name = isset($_POST['custom_name']) ? $_POST['custom_name'] : 'default_name';
-    $directory_path = $host.'//gallery/' . $custom_name;
+    $directory_path = $host.'//gallery/uploads/' . $custom_name;
     if (!file_exists($directory_path)) {
         mkdir($directory_path, 0777, true); // Create directory if it doesn't exist
     }
@@ -109,20 +148,40 @@ echo 'Images uploaded successfully!';
 </form>
 </picture>
 <?php
-$dir = $_SERVER['DOCUMENT_ROOT'] . '/gallery'; // replace with your directory name
+$dir = $_SERVER['DOCUMENT_ROOT'] . '/gallery/uploads'; // replace with your directory name
 $files = array_diff(scandir($dir), array('..', '.'));
 foreach($files as $file) {
-    $subfiles = array_diff(scandir($host . '//gallery/' . $file), array('..', '.'));
+    $subfiles = array_diff(scandir($host . '//gallery/uploads/' . $file), array('..', '.'));
     $folder = pathinfo($subfiles[2], PATHINFO_FILENAME);
   $ext = pathinfo($subfiles[2], PATHINFO_EXTENSION);
   $reduced_path = "$dir/$file/$folder.$ext";
   $original_path = "$dir/$file/$folder.$ext";
   if (is_file($reduced_path) && is_file($original_path)) {
-    $url_og = 'http://' . $_SERVER["HTTP_HOST"].'/gallery'."/$file/$file"."_original.$ext";
-    $url_rs = 'http://' . $_SERVER["HTTP_HOST"].'/gallery'."/$file/$file"."_reduced.$ext";
-    echo "<picture><a href=\"$url_og\">";
+    $url_og = 'http://' . $_SERVER["HTTP_HOST"].'/gallery/uploads'."/$file/$file"."_original.$ext";
+    $url_rs = 'http://' . $_SERVER["HTTP_HOST"].'/gallery/uploads'."/$file/$file"."_reduced.$ext";
+    $delete_png = 'http://' . $_SERVER['HTTP_HOST'] . '/gallery/assets/trash.png';
+    echo "<picture id='$file'>";
+    echo "<button onclick=\"deletePicture('$file')\" type='submit' name='del' value='$file'><img id='delete_ico' src=\"$delete_png\" alt=\"Delete\"></button>";
+    echo "<a href=\"$url_og\">";
     echo "<img class=\"gallery_img\" src=\"$url_rs\" alt=\"$file\">";
     echo "</picture></a>";
   }
 }
 ?>
+<script>
+function deletePicture(filename) {
+  if (confirm(`Are you sure you want to delete ${filename}?`)) {
+    fetch('<?php echo 'http://' . $_SERVER["HTTP_HOST"].$_SERVER['REQUEST_URI'] ?>', {
+      method: 'POST',
+      body: new URLSearchParams({
+        del: `${filename}`
+      })
+    }).then(response => {
+        document.querySelector(`#${filename}`).style.display = "none";
+    }).catch(error => {
+      // There was a network error
+      alert(`There was a network error deleting ${filename}.`);
+    });
+  }
+}
+</script>
