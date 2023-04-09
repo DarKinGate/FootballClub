@@ -26,6 +26,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/db_connect.php');
         background-color: #999;
         height: 100%;
         width: auto;
+        box-shadow: 0 0 5 2 black inset;
         transition: 0.25s;
     }
     img[class="gallery_img"]:hover{
@@ -58,18 +59,42 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['image'])) {
     $original_path = $original_name;
     move_uploaded_file($_FILES['image']['tmp_name'], $original_path);
 
-    // Create reduced size image
-    $reduced_path = $reduced_name;
-    $image = imagecreatefromstring(file_get_contents($original_path));
-    $new_width = 500; // Set desired width for reduced size image
-    $new_height = imagesy($image) / imagesx($image) * $new_width;
-    $new_image = imagecreatetruecolor($new_width, $new_height);
-    imagecopyresampled($new_image, $image, 0, 0, 0, 0, $new_width, $new_height, imagesx($image), imagesy($image));
-    imagedestroy($image);
-    imagejpeg($new_image, $reduced_path, 80); // Save reduced size image as JPEG with 80% quality
-    imagedestroy($new_image);
+// Create reduced size image
+$reduced_path = $reduced_name;
+$image = imagecreatefromstring(file_get_contents($original_path));
+$new_height = 300; // Set desired height for reduced size image
+$max_width = 250; // Set maximum width for reduced size image
+$min_width = 100; // Set minimum width for reduced size image
+$original_width = imagesx($image);
+$original_height = imagesy($image);
+$aspect_ratio = $original_width / $original_height;
 
-    echo 'Images uploaded successfully!';
+// Set new width to fill the container
+if ($aspect_ratio > 1) { // horizontal image
+  $new_width = $max_width;
+} else { // vertical image
+  $new_width = round($new_height * $aspect_ratio);
+}
+
+// Make sure new width doesn't exceed max or drop below min
+if ($new_width > $max_width) {
+  $new_width = $max_width;
+  $new_height = round($new_width / $aspect_ratio);
+} else if ($new_width < $min_width) {
+  $new_width = $min_width;
+  $new_height = round($new_width / $aspect_ratio);
+}
+
+// Crop image to fill the container
+$src_x = round(($original_width - $new_width) / 2);
+$src_y = round(($original_height - $new_height) / 2);
+$new_image = imagecreatetruecolor($new_width, $new_height);
+imagecopyresampled($new_image, $image, 0, 0, $src_x, $src_y, $new_width, $new_height, $new_width, $new_height);
+imagedestroy($image);
+imagejpeg($new_image, $reduced_path, 80); // Save reduced size image as JPEG with 80% quality
+imagedestroy($new_image);
+
+echo 'Images uploaded successfully!';
 
 }
 ?>
