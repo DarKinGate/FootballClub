@@ -111,6 +111,15 @@ if (isset($_POST['cr_database']) && $admail != null &&  $adname != null && $adpa
       $_SESSION['user'] = $admail;
       $_SESSION['name'] = ucfirst($adname);
     }
+    $sql = "CREATE TABLE IF NOT EXISTS gallery (
+      ID INT(255) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+      img_url VARCHAR(255) NOT NULL,
+      img_title VARCHAR(255) NOT NULL,
+      img_description VARCHAR(255) NOT NULL
+      )";
+if ($conn->query($sql) === FALSE) {
+echo "Error creating table: " . $conn->error;
+}
     header("Location: install_db.php");
     exit();
   }
