@@ -79,12 +79,17 @@ if(is_dir($dir_path)){
         }
     }
     rmdir($dir_path);
+    $del_name = $_POST['del'];
+    $sql = "DELETE FROM `gallery` WHERE `gallery`.`img_custom_name` = $del_name";
+if ($conn->query($sql) === FALSE) {
+  echo "Error creating table: " . $conn->error;
+}
 }
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['image'])) {
     // Get custom name and create directory
-    $c_name = isset($_POST['custom_name']) ? $_POST['custom_name'] : 'default_name';
+    $c_name = $_POST['custom_name'] ? $_POST['custom_name'] : pathinfo($_FILES['image']['name'], PATHINFO_FILENAME);
     $custom_name = htmlspecialchars($c_name, ENT_QUOTES, 'UTF-8');
     $directory_path = $host.'/gallery/uploads/' . $custom_name;
     if (!file_exists($directory_path)) {
@@ -92,16 +97,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['image'])) {
     }
 
     // Set filenames for original and reduced size images
-    $original_name = $directory_path . '/' . $custom_name . '_original.' . pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
-    $reduced_name = $directory_path . '/' . $custom_name . '_reduced.' . pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
-    
+    if($_POST['custom_name']){$name = $custom_name;}else{$name = pathinfo($_FILES['image']['name'], PATHINFO_FILENAME);}
+    $original_name = $directory_path . '/' . $name . '_original.' . pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+    $reduced_name = $directory_path . '/' . $name . '_reduced.' . pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+
     // Upload original size image
     $original_path = $original_name;
+    if(is_file($original_path)){
+      echo "Image with that name already exists on the server! Please choose different name or put custom name";
+    } else {
     if(!$_POST['custom_name'] == null){
       move_uploaded_file($_FILES['image']['tmp_name'], $original_path);
     } else {
-      $basename = basename($_FILES["image"]["name"]);
-      move_uploaded_file($_FILES['image']['tmp_name'], $basename);
+      move_uploaded_file($_FILES['image']['tmp_name'], $original_path);
+      
     }
 
 // Create reduced size image
@@ -149,7 +158,7 @@ if ($conn->query($sql) === FALSE) {
   echo "Error creating table: " . $conn->error;
 }
 
-}
+}}
 
 ?>
 
