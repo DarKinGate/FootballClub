@@ -218,6 +218,7 @@ content {
   flex-grow: 0;
   height: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* end of Container styling witch includes <main> and <aside> */
@@ -240,6 +241,7 @@ fieldset#user_display {
   border: 2px solid var(--too-dark-gray);
   font-size: clamp(16px, 2vw, 20px);
   height: 90%;
+  min-height: 500px;
   width: 50%;
   flex-shrink: 0;
   flex-basis: auto;

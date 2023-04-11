@@ -5,6 +5,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/db_connect.php');
     main{
         display: flex;
         gap: 1rem;
+        flex-wrap: wrap;
     }
     picture{
         --base-size: 12rem;
@@ -82,10 +83,10 @@ if(is_dir($dir_path)){
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['image'])) {
-
     // Get custom name and create directory
-    $custom_name = isset($_POST['custom_name']) ? $_POST['custom_name'] : 'default_name';
-    $directory_path = $host.'//gallery/uploads/' . $custom_name;
+    $c_name = isset($_POST['custom_name']) ? $_POST['custom_name'] : 'default_name';
+    $custom_name = htmlspecialchars($c_name, ENT_QUOTES, 'UTF-8');
+    $directory_path = $host.'/gallery/uploads/' . $custom_name;
     if (!file_exists($directory_path)) {
         mkdir($directory_path, 0777, true); // Create directory if it doesn't exist
     }
@@ -93,10 +94,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['image'])) {
     // Set filenames for original and reduced size images
     $original_name = $directory_path . '/' . $custom_name . '_original.' . pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
     $reduced_name = $directory_path . '/' . $custom_name . '_reduced.' . pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
-
+    
     // Upload original size image
     $original_path = $original_name;
-    move_uploaded_file($_FILES['image']['tmp_name'], $original_path);
+    if(!$_POST['custom_name'] == null){
+      move_uploaded_file($_FILES['image']['tmp_name'], $original_path);
+    } else {
+      $basename = basename($_FILES["image"]["name"]);
+      move_uploaded_file($_FILES['image']['tmp_name'], $basename);
+    }
 
 // Create reduced size image
 $reduced_path = $reduced_name;
@@ -134,16 +140,29 @@ imagejpeg($new_image, $reduced_path, 80); // Save reduced size image as JPEG wit
 imagedestroy($new_image);
 
 echo 'Images uploaded successfully!';
+$img_title = isset($_POST['img_title']) ? $_POST['img_title'] : 'default_name';
+$img_desc = isset($_POST['img_description']) ? $_POST['img_description'] : 'default_name';
+$title = htmlspecialchars($img_title, ENT_QUOTES, 'UTF-8');
+$description = htmlspecialchars($img_desc, ENT_QUOTES, 'UTF-8');
+$sql = "INSERT INTO `gallery` (`ID`, `img_custom_name` , `img_url_og`, `img_url_rs`, `img_title`, `img_description`) VALUES (NULL, '$custom_name' , '$original_name', '$reduced_name', '$title', '$description');";
+if ($conn->query($sql) === FALSE) {
+  echo "Error creating table: " . $conn->error;
+}
 
 }
+
 ?>
 
 <!-- HTML form for uploading images -->
 <form method="post" enctype="multipart/form-data">
+  <input type="file" name="image" required>
     <label for="custom_name">Custom Name:</label>
-    <input type="text" id="custom_name" name="custom_name">
+    <input type="text" id="custom_name" name="custom_name" placeholder="(Optional)"><br>
+    <label for="custom_name" required>Title:</label>
+    <input type="text" id="img_title" name="img_title"><br>
+    <label for="custom_name">Description:</label>
+    <input type="text" id="img_description" name="img_description">
     <br>
-    <input type="file" name="image" required>
     <button type="submit">Upload</button>
 </form>
 </picture>

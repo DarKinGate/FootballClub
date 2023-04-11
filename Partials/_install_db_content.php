@@ -113,7 +113,9 @@ if (isset($_POST['cr_database']) && $admail != null &&  $adname != null && $adpa
     }
     $sql = "CREATE TABLE IF NOT EXISTS gallery (
       ID INT(255) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-      img_url VARCHAR(255) NOT NULL,
+      img_custom_name VARCHAR(255) NOT NULL,
+      img_url_og VARCHAR(255) NOT NULL,
+      img_url_rs VARCHAR(255) NOT NULL,
       img_title VARCHAR(255) NOT NULL,
       img_description VARCHAR(255) NOT NULL
       )";
