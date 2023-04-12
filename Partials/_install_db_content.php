@@ -117,7 +117,7 @@ if (isset($_POST['cr_database']) && $admail != null &&  $adname != null && $adpa
       img_url_og VARCHAR(255) NOT NULL,
       img_url_rs VARCHAR(255) NOT NULL,
       img_title VARCHAR(255) NOT NULL,
-      img_description VARCHAR(255) NOT NULL
+      img_description LONGTEXT NOT NULL
       )";
 if ($conn->query($sql) === FALSE) {
 echo "Error creating table: " . $conn->error;
