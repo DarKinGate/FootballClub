@@ -94,21 +94,23 @@ require($_SERVER['DOCUMENT_ROOT'] . '/db_connect.php');
   }
 
   #lightbox {
-    position: fixed;
+    position: absolute;
     z-index: 9999;
-    top: 0;
+    top: 7rem;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
   }
 
   #lightbox img {
     max-width: 90%;
     max-height: 90%;
+    border-radius: 1rem;
   }
 
   #lightbox-close {
@@ -253,7 +255,6 @@ new_upload>form>label[for="custom_name"]{
   border-radius: 0rem 1rem 1rem 0rem;
   text-align: center;
   border: 2px dashed #555;
-
   font-size: 1rem;
   color: var(--light-gray);
   background-color: var(--very-dark-gray);
@@ -293,6 +294,69 @@ success{
 .new_picture{
     min-width: calc(var(--base-size) + 2rem);
     min-height: calc(var(--base-size) + 6rem);
+}
+section[id="display_title"] {
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  background-color:rgba(51,51,51,0.2);
+  color: rgba(0,0,0,0.8);
+  text-shadow: 0px 0px 2px #666;
+  font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  word-wrap: break-word;
+  transform: translateY(100%);
+  transition: 0.4s;
+}
+picture:hover section[id="display_title"]{
+  transform: translateY(0%);
+}
+section[id="display_title"]:hover{
+  background-color:rgba(51,51,51,0.8);
+}
+#lightbox_content{
+display: flex;
+flex-direction: column;
+background-color: #222;
+border-radius: 1rem;
+align-items: center;
+padding: 2rem;
+overflow: auto;
+}
+#highlight_title, #highlight_description{
+  font-size: 2rem;
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0px 0px 2px #333;
+  font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+#highlight_title{
+  margin-top: 1rem;
+}
+#highlight_title::after{
+  content: '';
+  width: 100%;
+  display:block;
+  height: 0.1rem;
+  background: rgba(255,255,255,0.5);
+}
+#highlight_description{
+  font-size: 1.2rem;
+  align-self: baseline;
+}
+#feedback{
+  display: block;
+  position: relative;
+  justify-content: center;
+  align-items: baseline;
+  z-index: 8;
 }
 </style>
 <new_upload id="new_upload">
@@ -339,7 +403,7 @@ success{
     // Upload original size image
     $original_path = $directory_path . '/' . $name . '_original.*';
     if (glob($original_path)) {
-      $result = '<error>Image with that name already exists on the server! <br><br> Please choose different name or put custom name</error>';
+      $result = '<error>Image with that name already exists! <br><br> Please choose different name</error>';
     } else {
       move_uploaded_file($_FILES['image']['tmp_name'], $original_name);
 
@@ -393,7 +457,7 @@ success{
   }
 
   ?>
-
+<section id="feedback"><?php echo $result ?></section>
   <!-- HTML form for uploading images -->
   <form method="post" enctype="multipart/form-data">
   <label for="images" class="drop-container">
@@ -410,18 +474,20 @@ success{
     <button id="upload_button" type="submit">Upload</button>
   </form>
 </new_upload>
-<label for="upload_new_picture" id="label_cbox_upload"><picture class='new_picture'><?php echo $result ?><input type="checkbox" name="upload_new" id="upload_new_picture" hidden></picture></label>
+
+<label for="upload_new_picture" id="label_cbox_upload"><picture class='new_picture'><input type="checkbox" name="upload_new" id="upload_new_picture" hidden></picture></label>
   <?php
   $sql = "SELECT * FROM `gallery`";
   $result = mysqli_query($conn, $sql);
   $delete_png = 'http://' . $_SERVER['HTTP_HOST'] . '/gallery/assets/trash.png';
   while ($rows = mysqli_fetch_array($result)) {
   ?>
-    <picture id='<?php echo $rows['img_custom_name'] ?>'>
+    <picture id='<?php echo $rows['img_custom_name'] ?>' style="background:url(<?php echo $rows['img_url_rs'] ?>)">
       <button onclick="delete_picture('<?php echo $rows['img_custom_name'] ?>')" type="submit" name="del" value="<?php echo $rows['img_custom_name'] ?>"><img id='delete_ico' src="<?php echo $delete_png ?>" alt="Delete"></button>
       <a href="<?php echo $rows['img_url_og']; ?>" class="lightbox">
         <img class="gallery_img" src="<?php echo $rows['img_url_rs'] ?>" alt="<?php echo $rows['img_custom_name'] ?>">
-        <div><?php echo $rows['img_title'];; ?></div>
+        <section id="display_title"><?php echo $rows['img_title'];; ?></section>
+        <section id="display_description" hidden><?php echo $rows['img_description'];; ?></section>
     </picture></a>
   <?php } ?>
   <script>
@@ -433,10 +499,16 @@ success{
       element.addEventListener('click', function(event) {
         event.preventDefault(); // Prevent default link behavior
         var imageSrc = this.getAttribute('href');
+        var title = this.children[1].innerHTML;
+        var desc = this.children[2].innerHTML;
         // Create and append the lightbox HTML
         var lightbox = document.createElement('div');
         lightbox.id = 'lightbox';
-        lightbox.innerHTML = '<img src="' + imageSrc + '">' +
+        lightbox.innerHTML = '<div id="lightbox_content"><img src="' + imageSrc + '"><br>' +
+         '<section id="highlight_title">' +
+          title + '</section>' +
+          '<br>' + '<section id="highlight_description">' +
+          desc + '</section></div>' +
           '<a href="#" id="lightbox-close">Close</a>';
         document.body.appendChild(lightbox);
         // Add click event to close button
