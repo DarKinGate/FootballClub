@@ -1,1 +1,145 @@
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eius in doloremque quidem quisquam mollitia ullam aliquid ex officia corrupti. Aliquid dolores laudantium iure, eveniet fugit sed sunt voluptas nobis, obcaecati aut iste, sint odio amet magnam aliquam esse quibusdam eum voluptates maiores quod. Voluptatem accusamus aliquam vero vel repellat illum odio voluptatibus aperiam! Iure voluptatum recusandae est ducimus eaque perferendis dolorum omnis, nesciunt debitis, voluptatibus iusto sed, dolor modi rerum. Eius ipsa fuga molestias mollitia neque soluta quod eveniet ea vero natus. Aperiam deleniti repellat adipisci est tenetur dicta minus facilis ex asperiores, vitae nihil rerum optio quas eligendi aliquid unde quidem veritatis ut? Accusantium laboriosam earum perspiciatis quidem consectetur nulla dolor, laborum maiores excepturi culpa asperiores, est esse dolore. Quae quod, facilis error debitis, illo omnis itaque porro voluptate, ratione non voluptatibus assumenda fuga cum quasi id atque adipisci officiis amet enim. Minima rem tempora id veritatis doloremque quod sapiente enim, dignissimos qui delectus et culpa repellendus necessitatibus excepturi reprehenderit nobis recusandae mollitia. Ut, culpa. Ipsam deserunt modi minus eum esse facere et fuga, amet sit, rem, culpa omnis voluptate sapiente reiciendis id nulla nihil quo libero possimus a aut. Quasi quisquam provident eligendi cupiditate impedit cum iure, pariatur sit. Magni porro vero perferendis unde expedita perspiciatis delectus fuga nihil, labore maxime quo, deleniti dolores ad. Maxime, necessitatibus voluptatem! Assumenda cum ab saepe repellat a veritatis, amet aliquam nisi explicabo, fugiat, quod placeat ullam distinctio. Optio repudiandae odit, fugit voluptatum repellendus expedita officia voluptatem accusamus maiores dolore incidunt, dolorem commodi placeat aliquid dolor, repellat dignissimos a reiciendis eum. Necessitatibus, recusandae repellendus, nam optio consequatur doloribus voluptas cupiditate rerum, eius soluta labore nesciunt neque consequuntur ducimus deleniti sit. Debitis quia fugiat a asperiores, temporibus ab voluptas optio in incidunt, perspiciatis odit? Dolor recusandae praesentium voluptas sunt cum, aliquid sed a iure impedit. Reprehenderit dolores enim molestiae nesciunt inventore illo tempora, rem numquam doloremque maxime, deleniti assumenda consequuntur voluptas praesentium eaque est nulla nisi sunt consequatur, repellat earum. Eveniet eligendi, ducimus, a voluptatum, nihil debitis numquam labore harum aspernatur enim ipsa excepturi tempore fugiat earum quisquam amet. Accusamus eligendi quae sunt dignissimos neque consectetur reprehenderit alias, dolorum ducimus odio, consequuntur ea. Mollitia beatae tempore iusto deleniti atque exercitationem quam optio nihil aliquid. Quidem atque repellendus voluptatibus corporis consequatur non inventore, tenetur corrupti! Saepe quidem odit tempore. Nihil animi voluptas suscipit, natus adipisci perspiciatis earum eum quisquam ex accusamus ad qui hic iusto dolores illo? Maiores, reiciendis. Obcaecati asperiores quia facere odio error reiciendis itaque aperiam, nam necessitatibus aut repellat ratione, fugit eum id consequuntur quisquam ut in ipsam quos dolorum soluta libero! Animi laborum reprehenderit vel voluptates assumenda voluptatibus facere impedit inventore incidunt, cumque, facilis sed earum modi quam dolorem quo harum? Aliquam quaerat incidunt, error animi nemo dolorem nisi, explicabo in reprehenderit molestiae, quos voluptatum autem blanditiis. Eligendi, similique atque ab provident praesentium eius, deleniti animi reiciendis minus eaque voluptatibus maiores exercitationem. Repudiandae vero modi perspiciatis quisquam similique, ipsum nostrum illo magnam esse. Consequuntur nesciunt quia sequi dolore nulla veritatis officiis ducimus saepe rem dolores, perferendis fugiat architecto ab voluptatem quasi impedit quisquam enim natus esse rerum. Voluptates natus sit assumenda veritatis odit magni, culpa mollitia expedita quas labore eaque atque explicabo qui quibusdam dolores similique! Consequuntur illum culpa explicabo nulla mollitia. Soluta, autem repellat consequatur aut, ad quam necessitatibus quod reiciendis recusandae laboriosam iusto suscipit quia saepe! Adipisci, sapiente voluptate. Quis distinctio, eum modi exercitationem alias voluptatem fugit quibusdam a animi magnam praesentium rem dolorum natus deserunt, sequi ratione unde sit laborum. Hic eius qui minus ratione error atque nam consequuntur obcaecati! Tempore doloremque libero fuga voluptas facilis provident, nesciunt accusantium asperiores, distinctio velit a quae vitae aspernatur rem? Ea, id autem esse perferendis dolorum sapiente tempora corporis sequi delectus! Perferendis sequi ipsa quisquam earum incidunt et alias odit praesentium enim pariatur, consequuntur necessitatibus sint. Quaerat omnis nesciunt voluptatum culpa voluptates consequatur vitae officia facere molestiae quisquam, a perspiciatis eos necessitatibus facilis mollitia beatae modi iusto incidunt maxime temporibus porro, labore dolorem. Libero porro beatae odit. Repudiandae, dignissimos quis facilis quas commodi amet impedit molestiae asperiores nostrum explicabo corrupti qui deserunt eligendi quos quidem quae necessitatibus? Omnis harum, consectetur et facere quis amet quod molestias rem vel atque totam distinctio eligendi explicabo vitae consequuntur debitis magni tenetur repellat minus ullam exercitationem ut. Repellat vel quaerat odio praesentium alias itaque at quae harum dicta esse laboriosam ullam assumenda expedita, nemo porro consequuntur est nostrum, facilis quibusdam id quo suscipit. Possimus exercitationem officiis cum nihil molestiae ducimus voluptates ullam, dolore, nostrum incidunt ipsam. Accusantium asperiores quidem ab nihil quas possimus incidunt perspiciatis, inventore, ad molestias sunt voluptatum a aliquid sit dolorum maxime omnis voluptatem reiciendis neque aliquam suscipit quasi dolore? Impedit pariatur quibusdam itaque, similique eum nulla quas ab enim cum. Voluptate sed quisquam eaque adipisci sint enim nam nihil repudiandae est quo ducimus porro, consequuntur optio commodi nemo placeat, consequatur beatae. Odit adipisci ad cupiditate dignissimos impedit atque dolore repellendus incidunt vel similique deserunt ducimus maxime rerum assumenda magnam, eos, quam suscipit totam! Dolor animi atque dolore vero placeat labore praesentium aliquid, nisi ipsa rem facilis molestiae, asperiores incidunt? Eveniet aspernatur labore ut dolorum iste repellendus provident. A dolore delectus maxime minus temporibus. Soluta debitis nemo odio? Neque beatae laudantium alias eum esse modi accusantium reiciendis quas dicta facere laborum, molestiae hic error dolorum officia odio corporis dolore enim soluta tenetur quis voluptate ex possimus? Facere debitis quis accusantium illo iure libero provident sit asperiores vero sunt reiciendis minima, officiis molestias laboriosam accusamus molestiae optio tempora quo et laborum, ut adipisci saepe esse. Maxime sunt modi voluptas velit corporis commodi enim eligendi porro nemo voluptatum! Quidem, veniam tempora distinctio aperiam dolorem beatae fuga iste vel repellat animi accusamus vitae quam corrupti culpa nostrum iusto libero voluptatem, similique iure eligendi dolores ipsam est eos! Minus doloremque esse optio molestias, non, dolor et provident nostrum architecto perspiciatis modi distinctio magnam sunt quod voluptatibus nihil corporis, labore quidem ut vitae hic consequuntur? Id amet et eius ducimus quo, officia autem consequatur velit molestias dolore commodi ullam, soluta tempora eum distinctio iste a dignissimos delectus veniam! Nam officiis architecto possimus, rem magnam provident sit minus temporibus. Alias nostrum assumenda in, nihil, cupiditate atque maxime delectus et eos enim, non omnis magni dolore? Iusto odit voluptatem optio officiis incidunt assumenda! A blanditiis odit est enim possimus eligendi deserunt maiores aliquam ab odio dolor, molestias fugiat expedita dolorum necessitatibus obcaecati sunt facere numquam! Molestias reprehenderit amet eligendi necessitatibus aliquid eaque reiciendis harum voluptatem modi, ex facilis iste itaque et dolores, neque, natus in perferendis mollitia odio. Nobis officiis omnis dicta, facilis dolorem assumenda totam fuga, deleniti sequi itaque odit voluptatum error eius minus, repudiandae quis quia consequatur rem adipisci fugiat eaque aspernatur! Ullam ipsa eum illum minima molestias sunt accusantium sapiente temporibus! Reiciendis sequi magnam at dolores. Facere fuga minima, eum totam rerum alias quos minus ea libero, quod voluptas id voluptatum atque distinctio cumque corporis vitae eaque iure quas voluptatibus aperiam consequatur! Ducimus veniam tenetur perferendis facilis, expedita deleniti facere quidem velit hic sit nisi asperiores, iste accusantium magni vero temporibus? Libero incidunt distinctio autem qui nam, neque soluta nostrum? Quo necessitatibus inventore consequatur, incidunt aspernatur eum nam repellat exercitationem dicta? Eos debitis quaerat quasi deleniti tempora? Voluptates cumque aliquid sequi. Possimus quasi quaerat culpa tenetur harum dolorum repellendus quisquam. Odio cumque libero sequi mollitia sit ad iure repellendus fugit quo totam animi deserunt tempore odit cupiditate, eligendi alias dignissimos accusantium corporis enim! Hic provident cupiditate expedita fuga ipsa ea voluptatem quo sit asperiores natus, placeat reiciendis libero dolore aliquam distinctio architecto sunt quasi assumenda. Debitis, dolores tenetur ad mollitia atque facilis consectetur illo ea, magni minus optio laborum explicabo qui necessitatibus nisi ut. Tempora enim illum ut, doloremque tempore obcaecati velit fuga, aut veritatis accusantium placeat ipsam architecto, explicabo exercitationem asperiores saepe optio doloribus earum cumque maiores! Suscipit, quidem temporibus id voluptatem excepturi maiores reprehenderit! Magni porro quam saepe hic maiores quidem, exercitationem ex corporis delectus nemo odit nihil eum ea voluptatem dicta tempora enim? Labore consequuntur voluptatem ut enim recusandae perferendis blanditiis molestiae saepe, animi quisquam provident, non voluptates minima pariatur. In id tenetur asperiores ipsum est ex ea quam temporibus debitis! Molestiae cum impedit fuga nihil, soluta velit necessitatibus neque reiciendis vel ducimus laborum consectetur, blanditiis asperiores. Saepe recusandae ullam temporibus corrupti, maiores corporis doloremque eligendi mollitia voluptatibus accusamus cupiditate ducimus, natus laudantium quibusdam quasi quae aspernatur voluptatum ipsa, impedit possimus. Sapiente itaque nihil quod maiores voluptas ipsum ducimus tempora perspiciatis aspernatur architecto ea omnis assumenda, odio earum quidem dicta alias! Quis reiciendis consectetur, enim officia porro atque iusto reprehenderit ut qui voluptatibus nemo error nihil, dicta quod temporibus cum provident doloribus nostrum eaque fugiat? A, similique ipsum! Vero voluptatibus molestiae quasi, amet itaque eaque eum doloremque ab molestias repudiandae a unde sint id accusantium autem ipsum omnis numquam alias fugit quo praesentium necessitatibus aspernatur nisi obcaecati. Beatae adipisci quidem impedit suscipit minima voluptas labore ab? Quibusdam optio sint nisi, veritatis possimus culpa esse sit beatae deserunt eius necessitatibus a molestiae?
+<?php
+require($_SERVER['DOCUMENT_ROOT'] . '/db_connect.php');
+?>
+<style><?php require($_SERVER['DOCUMENT_ROOT'] . '/styles/gallery_style.css') ?></style>
+<new_upload id="new_upload">
+  <label for="upload_new_picture" id="close_upload">Close</label>
+  <?php
+  $result = '';
+  // Check if form is submitted
+  if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['del'])) {
+    $dir_path = "$host/gallery/uploads/$_POST[del]";
+    if (is_dir($dir_path)) {
+      if (is_dir($dir_path)) {
+        $files = glob($dir_path . '/*');
+        foreach ($files as $file) {
+          if (is_file($file)) {
+            unlink($file);
+          }
+        }
+      }
+      rmdir($dir_path);
+      $sql = "DELETE FROM `gallery` WHERE `gallery`.`img_custom_name` = '$_POST[del]'";
+      if ($conn->query($sql) === FALSE) {
+        echo "Error: " . $conn->error;
+      }
+    }
+  }
+  if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['image']) && $_FILES['image']['name'] != null) {
+    // Get custom name and create directory
+    $c_name = $_POST['custom_name'] ? $_POST['custom_name'] : pathinfo($_FILES['image']['name'], PATHINFO_FILENAME);
+    $custom_name = htmlspecialchars($c_name, ENT_QUOTES, 'UTF-8');
+    $directory_path = $host . '/gallery/uploads/' . $custom_name;
+    if (!file_exists($directory_path)) {
+      mkdir($directory_path, 0777, true); // Create directory if it doesn't exist
+    }
+
+    // Set filenames for original and reduced size images
+    if ($_POST['custom_name']) {
+      $name = $custom_name;
+    } else {
+      $name = pathinfo($_FILES['image']['name'], PATHINFO_FILENAME);
+    }
+    $original_name = $directory_path . '/' . $name . '_original.' . pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+    $reduced_name = $directory_path . '/' . $name . '_reduced.' . pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+
+    // Upload original size image
+    $original_path = $directory_path . '/' . $name . '_original.*';
+    if (glob($original_path)) {
+      $result = '<error>Image with that name already exists! <br><br> Please choose different name</error>';
+    } else {
+      move_uploaded_file($_FILES['image']['tmp_name'], $original_name);
+
+      // Create reduced size image
+      $reduced_path = $reduced_name;
+      $image = imagecreatefromstring(file_get_contents($original_name));
+      $new_height = 300; // Set desired height for reduced size image
+      $max_width = 250; // Set maximum width for reduced size image
+      $min_width = 100; // Set minimum width for reduced size image
+      $original_width = imagesx($image);
+      $original_height = imagesy($image);
+      $aspect_ratio = $original_width / $original_height;
+
+      // Set new width to fill the container
+      if ($aspect_ratio > 1) { // horizontal image
+        $new_width = $max_width;
+      } else { // vertical image
+        $new_width = round($new_height * $aspect_ratio);
+      }
+
+      // Make sure new width doesn't exceed max or drop below min
+      if ($new_width > $max_width) {
+        $new_width = $max_width;
+        $new_height = round($new_width / $aspect_ratio);
+      } else if ($new_width < $min_width) {
+        $new_width = $min_width;
+        $new_height = round($new_width / $aspect_ratio);
+      }
+
+      // Crop image to fill the container
+      $src_x = round(($original_width - $new_width) / 2);
+      $src_y = round(($original_height - $new_height) / 2);
+      $new_image = imagecreatetruecolor($new_width, $new_height);
+      imagecopyresampled($new_image, $image, 0, 0, $src_x, $src_y, $new_width, $new_height, $new_width, $new_height);
+      imagedestroy($image);
+      imagejpeg($new_image, $reduced_name, 80); // Save reduced size image as JPEG with 80% quality
+      imagedestroy($new_image);
+
+      $result = '<success>Images uploaded successfully!</success>';
+      $img_title = isset($_POST['img_title']) ? $_POST['img_title'] : 'default_name';
+      $img_desc = isset($_POST['img_description']) ? $_POST['img_description'] : 'default_name';
+      $title = htmlspecialchars($img_title, ENT_QUOTES, 'UTF-8');
+      $description = htmlspecialchars($img_desc, ENT_QUOTES, 'UTF-8');
+      $url_og = 'http://' . $_SERVER["HTTP_HOST"] . '/gallery/uploads' . "/$custom_name/$custom_name" . "_original." . pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+      $url_rs = 'http://' . $_SERVER["HTTP_HOST"] . '/gallery/uploads' . "/$custom_name/$custom_name" . "_reduced." . pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+      $sql = "INSERT INTO `gallery` (`ID`, `img_custom_name` , `img_url_og`, `img_url_rs`, `img_title`, `img_description`) VALUES (NULL, '$custom_name' , '$url_og', '$url_rs', '$title', '$description');";
+      if ($conn->query($sql) === FALSE) {
+        echo "Error creating table: " . $conn->error;
+      }
+    }
+  }
+
+  ?>
+<section id="feedback"><?php echo $result ?></section>
+  <!-- HTML form for uploading images -->
+  <form method="post" enctype="multipart/form-data">
+  <label for="images" class="drop-container">
+    <input type="file" name="image" id="images" accept="image/*">
+    <span class="drop-title">Click or Drag and Drop</span>
+    <span id="file-chosen"></span>
+  </label>
+  <label for="custom_name" id="label_custom_name">Custom Name:</label>
+    <input type="text" id="custom_name" name="custom_name" placeholder="Custom Name"><br>
+    <label for="img_title" required>Title:</label>
+    <input type="text" id="img_title" name="img_title"><br>
+    <textarea type="text" id="img_description" name="img_description" placeholder="Description"></textarea>
+    <br>
+    <button id="upload_button" type="submit">Upload</button>
+  </form>
+</new_upload>
+
+<label for="upload_new_picture" id="label_cbox_upload" style="height: fit-content;"><picture class='new_picture'>+<input type="checkbox" name="upload_new" id="upload_new_picture" hidden></picture></label>
+  <?php
+  $sql = "SELECT * FROM `gallery`";
+  $result = mysqli_query($conn, $sql);
+  $delete_png = 'http://' . $_SERVER['HTTP_HOST'] . '/gallery/assets/trash.png';
+  while ($rows = mysqli_fetch_array($result)) {
+  ?>
+    <picture id='<?php echo $rows['img_custom_name'] ?>' style="background:url(<?php echo $rows['img_url_rs'] ?>)">
+      <button onclick="showConfirm('<?php echo $rows['img_custom_name'] ?>')" type="submit" name="del" value="<?php echo $rows['img_custom_name'] ?>"><img id='delete_ico' src="<?php echo $delete_png ?>" alt="Delete"></button>
+      <a href="<?php echo $rows['img_url_og']; ?>" class="lightbox">
+        <img class="gallery_img" src="<?php echo $rows['img_url_rs'] ?>" alt="<?php echo $rows['img_custom_name'] ?>">
+        <section id="display_title"><?php echo $rows['img_title'];; ?></section>
+        <section id="display_description" hidden><?php echo $rows['img_description'];; ?></section>
+    </picture></a>
+  <?php } ?>
+  <div id = "confirm_delete" hidden>
+<warning></warning>
+   <div class="close">
+      <button onclick = ""> Yes </button>
+      <button onclick = "closeConfirm()"> No </button>
+   </div>
+</div>
+<script>
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . '/Partials/scripts/gallery.js') ?>
+  </script>
